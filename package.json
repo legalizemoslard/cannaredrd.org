@@ -20,5 +20,9 @@
 		"gulp-svgmin": "^2.2.0",
 		"gulp-uglify": "^3.0.2"
 	},
-	"dependencies": {}
+	"dependencies": {
+		"node-sass": "^6.0.1",
+		"sass": "^1.42.1",
+		"sass-loader": "^12.1.0"
+	}
 }
