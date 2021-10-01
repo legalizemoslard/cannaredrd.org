@@ -9,12 +9,12 @@
 
 			ul.aside-menu
 
-				li.aside-menu__item.aside-menu__item--has-child(class=(type === "front" ? "aside-menu__item--active" : undefined))
-					a.aside-menu__link(href="javascript:void(0);")
+				li.aside-menu__item
+					a.aside-menu__link(href="/")
 						span Home
 
 					// sub menu start
-					ul.aside-menu__sub-list
+					// ul.aside-menu__sub-list
 						li(class=(page === "index" ? "item--active" : undefined))
 							a(href="index.html")
 								span 01 Home Color Style
@@ -35,12 +35,12 @@
 								span 06 Home Monochrome
 					// sub menu end
 
-				li.aside-menu__item.aside-menu__item--has-child(class=(dest === "pages" ? "aside-menu__item--active" : undefined))
-					a.aside-menu__link(href="javascript:void(0);")
-						span Pages
+				li.aside-menu__item
+					a.anchor.aside-menu__link(href="#about")
+						span Quienes somos
 
 					// sub menu start
-					ul.aside-menu__sub-list
+					// ul.aside-menu__sub-list
 						li(class=(page === "about" ? "item--active" : undefined))
 							a(href="about.html")
 								span About
@@ -85,12 +85,12 @@
 								span 404 Page
 					// sub menu end
 
-				li.aside-menu__item.aside-menu__item--has-child(class=(dest === "causes-pages" ? "aside-menu__item--active" : undefined))
-					a.aside-menu__link(href="javascript:void(0);")
-						span Causes
+				li.aside-menu__item
+					a.anchor.aside-menu__link(href="#causes")
+						span Causas
 
 					// sub menu start
-					ul.aside-menu__sub-list
+					// ul.aside-menu__sub-list
 						li(class=(page === "causes" ? "item--active" : undefined))
 							a(href="causes.html")
 								span Causes 1
@@ -105,12 +105,12 @@
 								span Cause Details
 					// sub menu end
 
-				li.aside-menu__item.aside-menu__item--has-child(class=(dest === "shop-inner" ? "aside-menu__item--active" : undefined))
-					a.aside-menu__link(href="javascript:void(0);")
-						span Shop
+				li.aside-menu__item
+					a.anchor.aside-menu__link(href="#events")
+						span Eventos 
 
 					// sub menu start
-					ul.aside-menu__sub-list
+					// ul.aside-menu__sub-list
 						li(class=(page === "shop" ? "item--active" : undefined))
 							a(href="shop.html")
 								span Catalog Page
@@ -128,11 +128,15 @@
 								span Shop Account
 					// sub menu end
 
-				li.aside-menu__item(class=(page === "contacts" ? "aside-menu__item--active" : undefined))
+				li.aside-menu__item
+					a.anchor.aside-menu__link(href="#blog")
+						span Blog
+				
+				li.aside-menu__item
 					a.aside-menu__link(href="contacts.html")
-						span Contacts
+						span Contactos
 
-				li.aside-menu__item.aside-menu__item--has-child(class=(dest === "elements" ? "aside-menu__item--active" : undefined))
+				// li.aside-menu__item.aside-menu__item--has-child(class=(dest === "elements" ? "aside-menu__item--active" : undefined))
 					a.aside-menu__link(href="javascript:void(0);")
 						span Elements
 
@@ -170,25 +174,26 @@
 			// aside menu start
 			ul.aside-menu
 				li.aside-menu__item
-					a.aside-menu__link(href="#") Documents
+					a.aside-menu__link(href="/") Home
 				li.aside-menu__item
-					a.aside-menu__link(href="#") Information
+					a.anchor.aside-menu__link(href="#about") Quienes somos
 				li.aside-menu__item
-					a.aside-menu__link(href="#") Additional Pages
+					a.anchor.aside-menu__link(href="#causes") Causas
 				li.aside-menu__item
-					a.aside-menu__link(href="#") Elements
+					a.anchor.aside-menu__link(href="#eventos") Eventos
 				li.aside-menu__item
-					a.aside-menu__link(href="#") Contacts
+					a.anchor.aside-menu__link(href="#blog") Blog
+				li.aside-menu__item
+					a.aside-menu__link(href="contacts.html") Contacts
 			// aside menu end
 
 			.aside-inner
 				span.aside-inner__title Email
-				a.aside-inner__link(href="mailto:support@helpo.org") support@helpo.org
+				a.aside-inner__link(href="mailto:redcannabicard@gmail.com") redcannabicard@gmail.com
 
 			.aside-inner
 				span.aside-inner__title Phone numbers
-				a.aside-inner__link(href="tel:+180012345678") + 1800 - 123 456 78
-				a.aside-inner__link(href="tel:+18009756511") + 1800 - 975 65 11
+				a.aside-inner__link(href="tel:+180012345678") + XXX XXXX
 
 			ul.aside-socials
 				li.aside-socials__item
@@ -205,7 +210,7 @@
 						+fa('facebook')
 
 		.aside-dropdown__item
-			a.button.button--squared(href="#")
-				span Donate
+			a.button.dbox-donation-button.button.button--squared(href='https://donorbox.org/contribuye-redcannabica-rd')
+				span Apoya
 
 // aside dropdown end

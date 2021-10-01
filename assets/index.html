@@ -7,9 +7,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 		<link rel="shortcut icon" href="img/favicon.ico"/>
-		<title>Helpo HTML Template</title>
+		<title>RedCannabica RD | Legalicemos la salud</title>
 		<!-- styles-->
 		<link rel="stylesheet" href="css/styles.min.css"/>
+		<!-- donorbox-->
+		<script type="text/javascript" defer="" src="https://donorbox.org/install-popup-button.js"></script>
+		<script type="text/javascript">
+			// Scroll certain amounts from current position 
+			window.scrollBy({ 
+				top: 100, // could be negative value
+				left: 0, 
+				behavior: 'smooth' 
+			});
+
+		</script>
 		<!-- web-font loader-->
 		<script>
 			WebFontConfig = {
@@ -49,88 +60,168 @@
 					</svg></span>
 				<div class="aside-dropdown__item d-lg-none d-block">
 					<ul class="aside-menu">
-						<li class="aside-menu__item aside-menu__item--has-child aside-menu__item--active"><a class="aside-menu__link" href="javascript:void(0);"><span>Home</span></a>
+						<li class="aside-menu__item"><a class="aside-menu__link" href="/"><span>Home</span></a>
 							<!-- sub menu start-->
-							<ul class="aside-menu__sub-list">
-								<li class="item--active"><a href="index.html"><span>01 Home Color Style</span></a></li>
-								<li><a href="front_2.html"> <span>02 Home Color Style</span></a></li>
-								<li><a href="front_3.html"><span>03 Home Color Style</span></a></li>
-								<li><a href="mono/index.html"><span>04 Home Monochrome</span></a></li>
-								<li><a href="mono/front_2.html"><span>05 Home Monochrome</span></a></li>
-								<li><a href="mono/front_3.html"><span>06 Home Monochrome</span></a></li>
-							</ul>
+							<!-- ul.aside-menu__sub-list
+							li(class=(page === "index" ? "item--active" : undefined))
+								a(href="index.html")
+									span 01 Home Color Style
+							li(class=(page === "front_2" ? "item--active" : undefined))
+								a(href="front_2.html") 
+									span 02 Home Color Style
+							li(class=(page === "front_3" ? "item--active" : undefined))
+								a(href="front_3.html")
+									span 03 Home Color Style
+							li
+								a(href="mono/index.html")
+									span 04 Home Monochrome
+							li
+								a(href="mono/front_2.html")
+									span 05 Home Monochrome
+							li
+								a(href="mono/front_3.html")
+									span 06 Home Monochrome
+							-->
 							<!-- sub menu end-->
 						</li>
-						<li class="aside-menu__item aside-menu__item--has-child"><a class="aside-menu__link" href="javascript:void(0);"><span>Pages</span></a>
+						<li class="aside-menu__item"><a class="anchor aside-menu__link" href="#about"><span>Quienes somos</span></a>
 							<!-- sub menu start-->
-							<ul class="aside-menu__sub-list">
-								<li><a href="about.html"><span>About</span></a></li>
-								<li><a href="typography.html"> <span>Typography</span></a></li>
-								<li><a href="donors.html"><span>Donors & Partners</span></a></li>
-								<li><a href="volunteer.html"><span>Become a Volunteer</span></a></li>
-								<li><a href="events.html"><span>Events</span></a></li>
-								<li><a href="event-details.html"><span>Event Details</span></a></li>
-								<li><a href="stories.html"><span>Stories</span></a></li>
-								<li><a href="story-details.html"><span>Story Details</span></a></li>
-								<li><a href="blog.html"><span>Blog</span></a></li>
-								<li><a href="blog-post.html"><span>Blog Post</span></a></li>
-								<li><a href="gallery.html"><span>Gallery</span></a></li>
-								<li><a href="pricing.html"><span>Pricing Plans</span></a></li>
-								<li><a href="faq.html"><span>FAQ</span></a></li>
-								<li><a href="404.html"><span>404 Page</span></a></li>
-							</ul>
+							<!-- ul.aside-menu__sub-list
+							li(class=(page === "about" ? "item--active" : undefined))
+								a(href="about.html")
+									span About
+							li(class=(page === "typography" ? "item--active" : undefined))
+								a(href="typography.html") 
+									span Typography
+							li(class=(page === "donors" ? "item--active" : undefined))
+								a(href="donors.html")
+									span Donors & Partners
+							li(class=(page === "volunteer" ? "item--active" : undefined))
+								a(href="volunteer.html")
+									span Become a Volunteer
+							li(class=(page === "events" ? "item--active" : undefined))
+								a(href="events.html")
+									span Events
+							li(class=(page === "event-details" ? "item--active" : undefined))
+								a(href="event-details.html")
+									span Event Details
+							li(class=(page === "stories" ? "item--active" : undefined))
+								a(href="stories.html")
+									span Stories
+							li(class=(page === "storie-details" ? "item--active" : undefined))
+								a(href="story-details.html")
+									span Story Details
+							li(class=(page === "blog" ? "item--active" : undefined))
+								a(href="blog.html")
+									span Blog
+							li(class=(page === "blog-post" ? "item--active" : undefined))
+								a(href="blog-post.html")
+									span Blog Post
+							li(class=(page === "gallery" ? "item--active" : undefined))
+								a(href="gallery.html")
+									span Gallery
+							li(class=(page === "pricing" ? "item--active" : undefined))
+								a(href="pricing.html")
+									span Pricing Plans
+							li(class=(page === "faq" ? "item--active" : undefined))
+								a(href="faq.html")
+									span FAQ
+							li(class=(page === "404" ? "item--active" : undefined))
+								a(href="404.html")
+									span 404 Page
+							-->
 							<!-- sub menu end-->
 						</li>
-						<li class="aside-menu__item aside-menu__item--has-child"><a class="aside-menu__link" href="javascript:void(0);"><span>Causes</span></a>
+						<li class="aside-menu__item"><a class="anchor aside-menu__link" href="#causes"><span>Causas</span></a>
 							<!-- sub menu start-->
-							<ul class="aside-menu__sub-list">
-								<li><a href="causes.html"><span>Causes 1</span></a></li>
-								<li><a href="causes_2.html"> <span>Causes 2</span></a></li>
-								<li><a href="causes_3.html"><span>Causes 3</span></a></li>
-								<li><a href="cause-details.html"><span>Cause Details</span></a></li>
-							</ul>
+							<!-- ul.aside-menu__sub-list
+							li(class=(page === "causes" ? "item--active" : undefined))
+								a(href="causes.html")
+									span Causes 1
+							li(class=(page === "causes_2" ? "item--active" : undefined))
+								a(href="causes_2.html") 
+									span Causes 2
+							li(class=(page === "causes_3" ? "item--active" : undefined))
+								a(href="causes_3.html")
+									span Causes 3
+							li(class=(page === "cause_details" ? "item--active" : undefined))
+								a(href="cause-details.html")
+									span Cause Details
+							-->
 							<!-- sub menu end-->
 						</li>
-						<li class="aside-menu__item aside-menu__item--has-child"><a class="aside-menu__link" href="javascript:void(0);"><span>Shop</span></a>
+						<li class="aside-menu__item"><a class="anchor aside-menu__link" href="#events"><span>Eventos </span></a>
 							<!-- sub menu start-->
-							<ul class="aside-menu__sub-list">
-								<li><a href="shop.html"><span>Catalog Page</span></a></li>
-								<li><a href="shop-product.html"><span>Shop Product</span></a></li>
-								<li><a href="shop-cart.html"><span>Shop Cart</span></a></li>
-								<li><a href="shop-checkout.html"><span>Shop Checkout</span></a></li>
-								<li><a href="shop-account.html"><span>Shop Account</span></a></li>
-							</ul>
+							<!-- ul.aside-menu__sub-list
+							li(class=(page === "shop" ? "item--active" : undefined))
+								a(href="shop.html")
+									span Catalog Page
+							li(class=(page === "shop-product" ? "item--active" : undefined))
+								a(href="shop-product.html")
+									span Shop Product
+							li(class=(page === "cart" ? "item--active" : undefined))
+								a(href="shop-cart.html")
+									span Shop Cart
+							li(class=(page === "checkout" ? "item--active" : undefined))
+								a(href="shop-checkout.html")
+									span Shop Checkout
+							li(class=(page === "account" ? "item--active" : undefined))
+								a(href="shop-account.html")
+									span Shop Account
+							-->
 							<!-- sub menu end-->
 						</li>
-						<li class="aside-menu__item"><a class="aside-menu__link" href="contacts.html"><span>Contacts</span></a></li>
-						<li class="aside-menu__item aside-menu__item--has-child"><a class="aside-menu__link" href="javascript:void(0);"><span>Elements</span></a>
-							<!-- sub menu start-->
-							<ul class="aside-menu__sub-list">
-								<li><a href="alerts.html"><span>Alerts</span></a></li>
-								<li><a href="team.html"><span>Team</span></a></li>
-								<li><a href="testimonials.html"><span>Testimonials</span></a></li>
-								<li><a href="accordion.html"><span>Accordion</span></a></li>
-								<li><a href="tabs.html"><span>Tabs</span></a></li>
-								<li><a href="pricing-plan.html"><span>Pricing Plan</span></a></li>
-								<li><a href="counters.html"><span>Counters</span></a></li>
-								<li><a href="icons.html"><span>Icons</span></a></li>
-							</ul>
-							<!-- sub menu end-->
-						</li>
+						<li class="aside-menu__item"><a class="anchor aside-menu__link" href="#blog"><span>Blog</span></a></li>
+						<li class="aside-menu__item"><a class="aside-menu__link" href="contacts.html"><span>Contactos</span></a></li>
+						<!-- li.aside-menu__item.aside-menu__item--has-child(class=(dest === "elements" ? "aside-menu__item--active" : undefined))
+						a.aside-menu__link(href="javascript:void(0);")
+							span Elements
+
+						// sub menu start
+						ul.aside-menu__sub-list
+							li(class=(page === "alerts" ? "item--active" : undefined))
+								a(href="alerts.html")
+									span Alerts
+							li(class=(page === "team" ? "item--active" : undefined))
+								a(href="team.html")
+									span Team
+							li(class=(page === "testimonials" ? "item--active" : undefined))
+								a(href="testimonials.html")
+									span Testimonials
+							li(class=(page === "accordion" ? "item--active" : undefined))
+								a(href="accordion.html")
+									span Accordion
+							li(class=(page === "tabs" ? "item--active" : undefined))
+								a(href="tabs.html")
+									span Tabs
+							li(class=(page === "pricing-plan" ? "item--active" : undefined))
+								a(href="pricing-plan.html")
+									span Pricing Plan
+							li(class=(page === "counters" ? "item--active" : undefined))
+								a(href="counters.html")
+									span Counters
+							li(class=(page === "icons" ? "item--active" : undefined))
+								a(href="icons.html")
+									span Icons
+
+						// sub menu end
+
+						-->
 					</ul>
 				</div>
 				<div class="aside-dropdown__item">
 					<!-- aside menu start-->
 					<ul class="aside-menu">
-						<li class="aside-menu__item"><a class="aside-menu__link" href="#">Documents</a></li>
-						<li class="aside-menu__item"><a class="aside-menu__link" href="#">Information</a></li>
-						<li class="aside-menu__item"><a class="aside-menu__link" href="#">Additional Pages</a></li>
-						<li class="aside-menu__item"><a class="aside-menu__link" href="#">Elements</a></li>
-						<li class="aside-menu__item"><a class="aside-menu__link" href="#">Contacts</a></li>
+						<li class="aside-menu__item"><a class="aside-menu__link" href="/">Home</a></li>
+						<li class="aside-menu__item"><a class="anchor aside-menu__link" href="#about">Quienes somos</a></li>
+						<li class="aside-menu__item"><a class="anchor aside-menu__link" href="#causes">Causas</a></li>
+						<li class="aside-menu__item"><a class="anchor aside-menu__link" href="#eventos">Eventos</a></li>
+						<li class="aside-menu__item"><a class="anchor aside-menu__link" href="#blog">Blog</a></li>
+						<li class="aside-menu__item"><a class="aside-menu__link" href="contacts.html">Contacts</a></li>
 					</ul>
 					<!-- aside menu end-->
-					<div class="aside-inner"><span class="aside-inner__title">Email</span><a class="aside-inner__link" href="mailto:support@helpo.org">support@helpo.org</a></div>
-					<div class="aside-inner"><span class="aside-inner__title">Phone numbers</span><a class="aside-inner__link" href="tel:+180012345678">+ 1800 - 123 456 78</a><a class="aside-inner__link" href="tel:+18009756511">+ 1800 - 975 65 11</a></div>
+					<div class="aside-inner"><span class="aside-inner__title">Email</span><a class="aside-inner__link" href="mailto:redcannabicard@gmail.com">redcannabicard@gmail.com</a></div>
+					<div class="aside-inner"><span class="aside-inner__title">Phone numbers</span><a class="aside-inner__link" href="tel:+180012345678">+ XXX XXXX</a></div>
 					<ul class="aside-socials">
 						<li class="aside-socials__item"><a class="aside-socials__link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 						<li class="aside-socials__item"><a class="aside-socials__link" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
@@ -138,7 +229,7 @@
 						<li class="aside-socials__item"><a class="aside-socials__link" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 					</ul>
 				</div>
-				<div class="aside-dropdown__item"><a class="button button--squared" href="#"><span>Donate</span></a></div>
+				<div class="aside-dropdown__item"><a class="button dbox-donation-button button button--squared" href="https://donorbox.org/contribuye-redcannabica-rd"><span>Apoya</span></a></div>
 				</div>
 			</div>
 			<!-- aside dropdown end-->
@@ -156,73 +247,154 @@
 							<!-- main menu start-->
 							<nav>
 								<ul class="main-menu">
-									<li class="main-menu__item main-menu__item--has-child main-menu__item--active"><a class="main-menu__link" href="javascript:void(0);"><span>Home</span></a>
+									<li class="main-menu__item"><a class="main-menu__link" href="/"><span>Home</span></a></li>
+									<li class="main-menu__item"><a class="anchor main-menu__link" href="#about"><span>Quienes somos</span></a>
 										<!-- sub menu start-->
-										<ul class="main-menu__sub-list">
-											<li class="item--active"><a href="index.html"><span>01 Home Color Style</span></a></li>
-											<li><a href="front_2.html"> <span>02 Home Color Style</span></a></li>
-											<li><a href="front_3.html"><span>03 Home Color Style</span></a></li>
-											<li><a href="mono/index.html"><span>04 Home Monochrome</span></a></li>
-											<li><a href="mono/front_2.html"><span>05 Home Monochrome</span></a></li>
-											<li><a href="mono/front_3.html"><span>06 Home Monochrome</span></a></li>
-										</ul>
+										<!-- ul.main-menu__sub-list
+										li(class=(page === "index" ? "item--active" : undefined))
+											a(href="index.html")
+												span 01 Home Color Style
+										li(class=(page === "front_2" ? "item--active" : undefined))
+											a(href="front_2.html") 
+												span 02 Home Color Style
+										li(class=(page === "front_3" ? "item--active" : undefined))
+											a(href="front_3.html")
+												span 03 Home Color Style
+										li
+											a(href="mono/index.html")
+												span 04 Home Monochrome
+										li
+											a(href="mono/front_2.html")
+												span 05 Home Monochrome
+										li
+											a(href="mono/front_3.html")
+												span 06 Home Monochrome
+										-->
 										<!-- sub menu end-->
 									</li>
-									<li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="javascript:void(0);"><span>Pages</span></a>
+									<!-- li.main-menu__item.main-menu__item--has-child(class=(dest === "pages" ? "main-menu__item--active" : undefined))
+									a.main-menu__link(href="javascript:void(0);")
+										span Pages
+
+									// sub menu start
+									ul.main-menu__sub-list.sub-list--style-2
+										li(class=(page === "about" ? "item--active" : undefined))
+											a(href="about.html")
+												span About
+										li(class=(page === "typography" ? "item--active" : undefined))
+											a(href="typography.html") 
+												span Typography
+										li(class=(page === "donors" ? "item--active" : undefined))
+											a(href="donors.html")
+												span Donors & Partners
+										li(class=(page === "volunteer" ? "item--active" : undefined))
+											a(href="volunteer.html")
+												span Become a Volunteer
+										li(class=(page === "member" ? "item--active" : undefined))
+											a(href="team-member.html")
+												span Team Member
+										li(class=(page === "events" ? "item--active" : undefined))
+											a(href="events.html")
+												span Events
+										li(class=(page === "event-details" ? "item--active" : undefined))
+											a(href="event-details.html")
+												span Event Details
+										li(class=(page === "stories" ? "item--active" : undefined))
+											a(href="stories.html")
+												span Stories
+										li(class=(page === "storie-details" ? "item--active" : undefined))
+											a(href="story-details.html")
+												span Story Details
+										li(class=(page === "blog" ? "item--active" : undefined))
+											a(href="blog.html")
+												span Blog
+										li(class=(page === "blog-post" ? "item--active" : undefined))
+											a(href="blog-post.html")
+												span Blog Post
+										li(class=(page === "gallery" ? "item--active" : undefined))
+											a(href="gallery.html")
+												span Gallery
+										li(class=(page === "pricing" ? "item--active" : undefined))
+											a(href="pricing.html")
+												span Pricing Plans
+										li(class=(page === "faq" ? "item--active" : undefined))
+											a(href="faq.html")
+												span FAQ
+										li(class=(page === "404" ? "item--active" : undefined))
+											a(href="404.html")
+												span 404 Page
+									// sub menu end
+
+									-->
+									<li class="main-menu__item main-menu__item--has-child"><a class="anchor main-menu__link" href="#causes"><span>Causas</span></a>
 										<!-- sub menu start-->
-										<ul class="main-menu__sub-list sub-list--style-2">
-											<li><a href="about.html"><span>About</span></a></li>
-											<li><a href="typography.html"> <span>Typography</span></a></li>
-											<li><a href="donors.html"><span>Donors & Partners</span></a></li>
-											<li><a href="volunteer.html"><span>Become a Volunteer</span></a></li>
-											<li><a href="team-member.html"><span>Team Member</span></a></li>
-											<li><a href="events.html"><span>Events</span></a></li>
-											<li><a href="event-details.html"><span>Event Details</span></a></li>
-											<li><a href="stories.html"><span>Stories</span></a></li>
-											<li><a href="story-details.html"><span>Story Details</span></a></li>
-											<li><a href="blog.html"><span>Blog</span></a></li>
-											<li><a href="blog-post.html"><span>Blog Post</span></a></li>
-											<li><a href="gallery.html"><span>Gallery</span></a></li>
-											<li><a href="pricing.html"><span>Pricing Plans</span></a></li>
-											<li><a href="faq.html"><span>FAQ</span></a></li>
-											<li><a href="404.html"><span>404 Page</span></a></li>
-										</ul>
+										<!-- ul.main-menu__sub-list
+										li(class=(page === "causes" ? "item--active" : undefined))
+											a(href="causes.html")
+												span Causes 1
+										li(class=(page === "causes_2" ? "item--active" : undefined))
+											a(href="causes_2.html") 
+												span Causes 2
+										li(class=(page === "causes_3" ? "item--active" : undefined))
+											a(href="causes_3.html")
+												span Causes 3
+										li(class=(page === "cause_details" ? "item--active" : undefined))
+											a(href="cause-details.html")
+												span Cause Details
+										-->
 										<!-- sub menu end-->
 									</li>
-									<li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="javascript:void(0);"><span>Causes</span></a>
+									<li class="main-menu__item"><a class="anchor main-menu__link" href="#events"><span>Eventos</span></a>
 										<!-- sub menu start-->
-										<ul class="main-menu__sub-list">
-											<li><a href="causes.html"><span>Causes 1</span></a></li>
-											<li><a href="causes_2.html"> <span>Causes 2</span></a></li>
-											<li><a href="causes_3.html"><span>Causes 3</span></a></li>
-											<li><a href="cause-details.html"><span>Cause Details</span></a></li>
-										</ul>
+										<!-- ul.main-menu__sub-list
+										li(class=(page === "shop" ? "item--active" : undefined))
+											a(href="shop.html")
+												span Catalog Page
+										li(class=(page === "shop-product" ? "item--active" : undefined))
+											a(href="shop-product.html")
+												span Shop Product
+										li(class=(page === "cart" ? "item--active" : undefined))
+											a(href="shop-cart.html")
+												span Shop Cart
+										li(class=(page === "checkout" ? "item--active" : undefined))
+											a(href="shop-checkout.html")
+												span Shop Checkout
+										li(class=(page === "account" ? "item--active" : undefined))
+											a(href="shop-account.html")
+												span Shop Account
+										-->
 										<!-- sub menu end-->
 									</li>
-									<li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="javascript:void(0);"><span>Shop</span></a>
+									<li class="main-menu__item"><a class="anchor main-menu__link" href="#blog"><span>Blog</span></a></li>
+									<li class="main-menu__item"><a class="main-menu__link" href="contacts.html"><span>Contactos</span></a>
 										<!-- sub menu start-->
-										<ul class="main-menu__sub-list">
-											<li><a href="shop.html"><span>Catalog Page</span></a></li>
-											<li><a href="shop-product.html"><span>Shop Product</span></a></li>
-											<li><a href="shop-cart.html"><span>Shop Cart</span></a></li>
-											<li><a href="shop-checkout.html"><span>Shop Checkout</span></a></li>
-											<li><a href="shop-account.html"><span>Shop Account</span></a></li>
-										</ul>
-										<!-- sub menu end-->
-									</li>
-									<li class="main-menu__item"><a class="main-menu__link" href="contacts.html"><span>Contacts</span></a></li>
-									<li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="javascript:void(0);"><span>Elements</span></a>
-										<!-- sub menu start-->
-										<ul class="main-menu__sub-list">
-											<li><a href="alerts.html"><span>Alerts</span></a></li>
-											<li><a href="team.html"><span>Team</span></a></li>
-											<li><a href="testimonials.html"><span>Testimonials</span></a></li>
-											<li><a href="accordion.html"><span>Accordion</span></a></li>
-											<li><a href="tabs.html"><span>Tabs</span></a></li>
-											<li><a href="pricing-plan.html"><span>Pricing Plan</span></a></li>
-											<li><a href="counters.html"><span>Counters</span></a></li>
-											<li><a href="icons.html"><span>Icons</span></a></li>
-										</ul>
+										<!-- ul.main-menu__sub-list
+										li(class=(page === "alerts" ? "item--active" : undefined))
+											a(href="alerts.html")
+												span Alerts
+										li(class=(page === "team" ? "item--active" : undefined))
+											a(href="team.html")
+												span Team
+										li(class=(page === "testimonials" ? "item--active" : undefined))
+											a(href="testimonials.html")
+												span Testimonials
+										li(class=(page === "accordion" ? "item--active" : undefined))
+											a(href="accordion.html")
+												span Accordion
+										li(class=(page === "tabs" ? "item--active" : undefined))
+											a(href="tabs.html")
+												span Tabs
+										li(class=(page === "pricing-plan" ? "item--active" : undefined))
+											a(href="pricing-plan.html")
+												span Pricing Plan
+										li(class=(page === "counters" ? "item--active" : undefined))
+											a(href="counters.html")
+												span Counters
+										li(class=(page === "icons" ? "item--active" : undefined))
+											a(href="icons.html")
+												span Icons
+
+										-->
 										<!-- sub menu end-->
 									</li>
 								</ul>
@@ -232,19 +404,24 @@
 						<div class="col-auto d-flex align-items-center">
 							<!-- lang select start-->
 							<ul class="lang-select">
-								<li class="lang-select__item lang-select__item--active"><span>En</span>
-									<ul class="lang-select__sub-list">
-										<li><a href="#">French</a></li>
-										<li><a href="#">Spanish</a></li>
-										<li><a href="#">Deutsch</a></li>
-										<li><a href="#">Russian</a></li>
-									</ul>
+								<li class="lang-select__item lang-select__item--active"><span>Es</span>
+									<!-- ul.lang-select__sub-list
+									li
+										a(href="#") French
+									li
+										a(href="#") Spanish
+									li
+										a(href="#") Deutsch
+									li
+										a(href="#") Russian
+									-->
 								</li>
 							</ul>
 							<!-- lang select end-->
-							<div class="dropdown-trigger d-block d-sm-none">
-								<div class="dropdown-trigger__item"></div>
-							</div><a class="button button--squared" href="#"><span>Donate</span></a>
+							<!-- .dropdown-trigger.d-block.d-sm-none
+							.dropdown-trigger__item
+
+							--><a class="dbox-donation-button button button--squared" href="https://donorbox.org/contribuye-redcannabica-rd" target="_blank"><span>Apoyanos</span></a>
 						</div>
 					</div>
 				</div>
@@ -265,12 +442,11 @@
 										<div class="align-container">
 											<div class="align-container__item">
 												<div class="promo-slider__wrapper-1">
-													<h2 class="promo-slider__title"><span>We help all people in need</span> <span>around the world.</span></h2>
+													<h2 class="promo-slider__title"><span>Ayudamos a todas las personas </span> <span>que necesitan la medicina cannabica.</span></h2>
 												</div>
-												<div class="promo-slider__wrapper-2">
-													<p class="promo-slider__subtitle">Gray eel-catfish longnose whiptail catfish smalleye squaretail queen danio unicorn fish shortnose greeneye fusilier fish silver carp nibbler sharksucker tench lookdown catfish</p>
-												</div>
-												<div class="promo-slider__wrapper-3"><a class="button promo-slider__button button--primary" href="#">Discover</a></div>
+												<!-- .promo-slider__wrapper-2p.promo-slider__subtitle Gray eel-catfish longnose whiptail catfish smalleye squaretail queen danio unicorn fish shortnose greeneye fusilier fish silver carp nibbler sharksucker tench lookdown catfish
+												-->
+												<div class="promo-slider__wrapper-3"><a class="button promo-slider__button button--primary" href="#about">Descubre</a></div>
 											</div>
 										</div>
 									</div>
@@ -288,12 +464,12 @@
 										<div class="align-container">
 											<div class="align-container__item">
 												<div class="promo-slider__wrapper-1">
-													<h2 class="promo-slider__title"><span>Our Helping</span><br/><span>around the world.</span></h2>
+													<h2 class="promo-slider__title"><span>Todos unidos</span><br/><span>podemos cambiar el mundo.</span></h2>
 												</div>
 												<div class="promo-slider__wrapper-2">
-													<p class="promo-slider__subtitle">Gray eel-catfish longnose whiptail catfish smalleye squaretail queen danio unicorn fish shortnose greeneye fusilier fish silver carp nibbler sharksucker tench lookdown catfish</p>
+													<p class="promo-slider__subtitle">Nuestra comunidad busca centralizar el esfuerzo ciudadano para que todos podamos apoyarnos.</p>
 												</div>
-												<div class="promo-slider__wrapper-3"><a class="button promo-slider__button button--primary" href="#">Discover</a></div>
+												<div class="promo-slider__wrapper-3"><a class="button promo-slider__button button--primary" href="#causes">Ver Causas</a></div>
 											</div>
 										</div>
 									</div>
@@ -311,12 +487,12 @@
 										<div class="align-container">
 											<div class="align-container__item">
 												<div class="promo-slider__wrapper-1">
-													<h2 class="promo-slider__title"><span>Helpo Volounteers</span><br/><span>Around the world.</span></h2>
+													<h2 class="promo-slider__title"><span>Espacio Virtual</span><br/><span>y Abierto a todos.</span></h2>
 												</div>
 												<div class="promo-slider__wrapper-2">
-													<p class="promo-slider__subtitle">Gray eel-catfish longnose whiptail catfish smalleye squaretail queen danio unicorn fish shortnose greeneye fusilier fish silver carp nibbler sharksucker tench lookdown catfish</p>
+													<p class="promo-slider__subtitle">Nuestras mesas de trabajo son espacios virtuales donde podemos compartir ideas de forma abierta y transparente.</p>
 												</div>
-												<div class="promo-slider__wrapper-3"><a class="button promo-slider__button button--primary" href="#">Discover</a></div>
+												<div class="promo-slider__wrapper-3"><a class="button promo-slider__button button--primary" href="#events">Ver Mesas</a></div>
 											</div>
 										</div>
 									</div>
@@ -336,10 +512,10 @@
 					<div class="promo-pannel"><a class="anchor promo-pannel__anchor" href="#about"> <span>Scroll Down</span></a>
 						<div class="promo-pannel__video"><img class="img--bg" src="img/video_block.jpg" alt="image"/><a class="video-trigger" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><span>Watch our video</span><i class="fa fa-play" aria-hidden="true"></i></a></div>
 						<div class="promo-pannel__phones">
-							<p class="promo-pannel__title">Phone numbers</p><a class="promo-pannel__link" href="tel:+180012345678">+ 1800 - 123 456 78</a><a class="promo-pannel__link" href="tel:+18009756511">+ 1800 - 975 65 11</a>
+							<p class="promo-pannel__title">Mobil</p><a class="promo-pannel__link" href="tel:+180012345678">+ XXX XXXX</a>
 						</div>
 						<div class="promo-pannel__email">
-							<p class="promo-pannel__title">Email</p><a class="promo-pannel__link" href="mailto:support@helpo.org">support@helpo.org</a>
+							<p class="promo-pannel__title">Email</p><a class="promo-pannel__link" href="mailto:redcannabicard@gmail.com">redcannabicard@gmail.com</a>
 						</div>
 					</div>
 					<!-- promo pannel end-->
@@ -361,17 +537,16 @@
 					<div class="container">
 						<div class="row align-items-center">
 							<div class="col-lg-6">
-								<div class="heading heading--primary"><span class="heading__pre-title">About Us</span>
-									<h2 class="heading__title"><span>Help is Our</span> <span>Main Goal</span></h2>
-								</div>
-								<p><strong>Thresher shark rudd African lungfish silverside, Red salmon rockfish grunion, garpike zebra danio king-of-the-salmon banjo catfish."</strong></p>
-								<p>Sea chub demoiselle whalefish zebra lionfish mud cat pelican eel. Minnow snoek icefish velvet-belly shark, California halibut round stingray northern sea robin. Southern grayling trout-perch</p>
-								<p>Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail, Canthigaster rostrata. Midshipman dartfish Modoc sucker, yellowtail kingfish basslet. Buri chimaera triplespine northern sea robin zingel lancetfish galjoen fish, catla wolffish, mosshead warbonnet</p><a class="button button--primary" href="about.html">More About</a>
+								<div class="heading heading--primary"><span class="heading__pre-title">Sobre nosotros</span>
+									<h2 class="heading__title"><span>Por la Salud</span> <span>de Todos</span></h2>
+									<p><strong>Fundación Red Cannábica es una organización sin fines de lucro que tiene como misión la educación, investigación, desarrollo e impulso de políticas publicas para el acceso a la planta de cannabis para uso medicinal, uso industrial, uso adulto e investigación científica en la República Dominicana.</strong></p>
+									<p>Somos una comunidad de Dominicanos que buscamos incidir en el proceso regulatorio de la cannabis en Republica Dominicana para el desarrollo y fortalecimiento de la sociedad civil.</p>
+								</div><a class="button button--primary" href="about.html">More About</a>
 							</div>
 							<div class="col-lg-6 col-xl-5 offset-xl-1">
 								<div class="info-box"><img class="img--layout" src="img/about_layout.png" alt="img"/><img class="img--bg" src="img/about-us.jpg" alt="img"/>
-									<h4 class="info-box__title">We are Awesome Volounteer Team</h4>
-									<p>Gray eel-catfish longnose whiptail catfish smalleye squaretail queen danio unicorn fish shortnose greeneye fusilier fish silver carp nibbler sharksucker tench lookdown catfish</p><a class="info-box__link" href="volunteer.html">Become a volounteer</a>
+									<h4 class="info-box__title">Somos un equipo de voluntarios cannabicos</h4>
+									<p>Unete a nuestro esfuerzo y contrubuye al cambio en politicas publicas que necesitamos.</p><a class="info-box__link" href="#text-section">Conviértete en voluntario</a>
 								</div>
 							</div>
 						</div>
@@ -383,8 +558,8 @@
 					<div class="container">
 						<div class="row margin-bottom">
 							<div class="col-12">
-								<div class="heading heading--center"><span class="heading__pre-title">Services</span>
-									<h2 class="heading__title"><span>What we do</span> <span>for all people</span></h2>
+								<div class="heading heading--center"><span class="heading__pre-title">Servicios</span>
+									<h2 class="heading__title"><span>¿Que ofrecemos</span> <span>en nuestro espacio?</span></h2>
 								</div>
 							</div>
 						</div>
@@ -397,7 +572,7 @@
 										</svg>
 									</div>
 									<div class="icon-item__text">
-										<p>Medicine Help</p>
+										<p>Información</p>
 									</div>
 								</div>
 							</div>
@@ -405,11 +580,11 @@
 								<div class="icon-item">
 									<div class="icon-item__img"><img class="img--layout" src="img/icon_2-2.png" alt="img"/>
 										<svg class="icon icon-item__icon icon--orange">
-											<use xlink:href="#church"></use>
+											<use xlink:href="#man"></use>
 										</svg>
 									</div>
 									<div class="icon-item__text">
-										<p>We Build and Create</p>
+										<p>Ayuda</p>
 									</div>
 								</div>
 							</div>
@@ -417,11 +592,11 @@
 								<div class="icon-item">
 									<div class="icon-item__img"><img class="img--layout" src="img/icon_3-3.png" alt="img"/>
 										<svg class="icon icon-item__icon icon--green">
-											<use xlink:href="#blood"></use>
+											<use xlink:href="#charity"></use>
 										</svg>
 									</div>
 									<div class="icon-item__text">
-										<p>Water Delivery</p>
+										<p>Comunidad</p>
 									</div>
 								</div>
 							</div>
@@ -429,11 +604,11 @@
 								<div class="icon-item">
 									<div class="icon-item__img"><img class="img--layout" src="img/icon_4-4.png" alt="img"/>
 										<svg class="icon icon-item__icon icon--blue">
-											<use xlink:href="#charity"></use>
+											<use xlink:href="#donate-1"></use>
 										</svg>
 									</div>
 									<div class="icon-item__text">
-										<p>We Care About</p>
+										<p>Donaciones</p>
 									</div>
 								</div>
 							</div>
@@ -442,13 +617,13 @@
 				</section>
 				<!-- icons section end-->
 				<!-- causes start-->
-				<section class="section causes"><img class="causes__bg" src="img/causes_img.png" alt="img"/>
+				<section class="section causes" id="causes"><img class="causes__bg" src="img/causes_img.png" alt="img"/>
 					<div class="container">
 						<div class="row align-items-end">
 							<div class="col-xl-5">
-								<div class="heading heading--primary"><span class="heading__pre-title">What we Do</span>
-									<h2 class="heading__title"><span>Helpo</span> <span>Causes</span></h2>
-									<p>Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail, Canthigaster rostrata. Midshipman dartfish Modoc sucker, yellowtail kingfish</p>
+								<div class="heading heading--primary"><span class="heading__pre-title">Nuestras causas</span>
+									<h2 class="heading__title"><span>RedCannabica</span> <span>Causas</span></h2>
+									<p>RedCannabica apoya proyectos comunitarios que busquen contribuir con nuestro compromiso de legalizar el cannabis en el país</p>
 								</div>
 							</div>
 							<div class="col-xl-6 offset-xl-1 d-none d-xl-block">
@@ -456,24 +631,24 @@
 									<div class="col-6">
 										<div class="counter-item counter-item--style-3">
 											<div class="counter-item__top">
-												<h6 class="counter-item__title">People We Helped on 2018</h6>
+												<h6 class="counter-item__title">Personas a las que ayudamos</h6>
 											</div>
-											<div class="counter-item__lower"><span class="js-counter">200</span><span>k</span></div>
+											<div class="counter-item__lower"><span class="js-counter">0</span><span>k</span></div>
 										</div>
 									</div>
 									<div class="col-6">
 										<div class="counter-item counter-item--style-3">
 											<div class="counter-item__top">
-												<h6 class="counter-item__title">Dollars We Collected</h6>
+												<h6 class="counter-item__title">Donaciones recaudadas</h6>
 											</div>
-											<div class="counter-item__lower"><span class="js-counter">65</span><span>bil</span></div>
+											<div class="counter-item__lower"><span class="js-counter">0</span><span>$</span></div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="row align-items-end margin-bottom">
-							<div class="col-sm-6"><a class="button button--primary" href="causes.html">More Causes</a></div>
+							<div class="col-sm-6"><a class="button button--primary" href="http://redcannabica.info/es-ES/initiatives" target="_blank">More Causes</a></div>
 							<div class="col-sm-6 d-flex justify-content-sm-end">
 								<!-- slider nav start-->
 								<div class="slider__nav causes-slider__nav">
@@ -495,96 +670,24 @@
 									<div class="causes-item causes-item--primary">
 										<div class="causes-item__body">
 											<div class="causes-item__top">
-												<h6 class="causes-item__title"> <a href="cause-details.html">Water Delivery in Africa</a></h6>
-												<p>Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail</p>
+												<h6 class="causes-item__title"> <a href="cause-details.html">Dona a RedCannabica</a></h6>
+												<p>Este fondo fue creado para apoyar iniciativas comunitarias, cubrir gastos de gestión y compensar nuestros voluntarios</p>
 											</div>
 											<div class="causes-item__img">
-												<div class="causes-item__badge" style="background-color: #49C2DF">Water Delivery</div><img class="img--bg" src="img/causes_1.jpg" alt="img"/>
+												<div class="causes-item__badge" style="background-color: #49C2DF">Community</div><img class="img--bg" src="img/causes_1.jpg" alt="img"/>
 											</div>
 											<div class="causes-item__lower">
 												<div class="progress-bar">
-													<div class="progress-bar__inner" style="width: 78%;">
-														<div class="progress-bar__value">78%</div>
+													<div class="progress-bar__inner" style="width: 0%;">
+														<div class="progress-bar__value">0%</div>
 													</div>
 												</div>
 												<div class="causes-item__details-holder">
-													<div class="causes-item__details-item"><span>Goal: </span><span>25 000$</span></div>
-													<div class="causes-item__details-item text-right"><span>Pledged: </span><span>20 350$</span></div>
+													<div class="causes-item__details-item"><span>Goal: </span><span>-$</span></div>
+													<div class="causes-item__details-item text-right"><span>Pledged: </span><span>all</span></div>
 												</div>
 											</div>
-										</div><a class="button causes-item__button button--primary" href="#">+ Donate</a>
-									</div>
-								</div>
-								<div class="causes-slider__item">
-									<div class="causes-item causes-item--primary">
-										<div class="causes-item__body">
-											<div class="causes-item__top">
-												<h6 class="causes-item__title"> <a href="cause-details.html">Health in other Countries</a></h6>
-												<p>Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail</p>
-											</div>
-											<div class="causes-item__img">
-												<div class="causes-item__badge" style="background-color: #F36F8F">Medicine</div><img class="img--bg" src="img/causes_2.jpg" alt="img"/>
-											</div>
-											<div class="causes-item__lower">
-												<div class="progress-bar">
-													<div class="progress-bar__inner" style="width: 23%;">
-														<div class="progress-bar__value">23%</div>
-													</div>
-												</div>
-												<div class="causes-item__details-holder">
-													<div class="causes-item__details-item"><span>Goal: </span><span>14 000$</span></div>
-													<div class="causes-item__details-item text-right"><span>Pledged: </span><span>6 098$</span></div>
-												</div>
-											</div>
-										</div><a class="button causes-item__button button--primary" href="#">+ Donate</a>
-									</div>
-								</div>
-								<div class="causes-slider__item">
-									<div class="causes-item causes-item--primary">
-										<div class="causes-item__body">
-											<div class="causes-item__top">
-												<h6 class="causes-item__title"> <a href="cause-details.html">We Build and Create</a></h6>
-												<p>Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail</p>
-											</div>
-											<div class="causes-item__img">
-												<div class="causes-item__badge" style="background-color: #2EC774">Education</div><img class="img--bg" src="img/causes_3.jpg" alt="img"/>
-											</div>
-											<div class="causes-item__lower">
-												<div class="progress-bar">
-													<div class="progress-bar__inner" style="width: 51%;">
-														<div class="progress-bar__value">51%</div>
-													</div>
-												</div>
-												<div class="causes-item__details-holder">
-													<div class="causes-item__details-item"><span>Goal: </span><span>150 000$</span></div>
-													<div class="causes-item__details-item text-right"><span>Pledged: </span><span>76 500$</span></div>
-												</div>
-											</div>
-										</div><a class="button causes-item__button button--primary" href="#">+ Donate</a>
-									</div>
-								</div>
-								<div class="causes-slider__item">
-									<div class="causes-item causes-item--primary">
-										<div class="causes-item__body">
-											<div class="causes-item__top">
-												<h6 class="causes-item__title"> <a href="cause-details.html">Healthy Food</a></h6>
-												<p>Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail</p>
-											</div>
-											<div class="causes-item__img">
-												<div class="causes-item__badge" style="background-color: #F8AC3A">Food</div><img class="img--bg" src="img/causes_4.jpg" alt="img"/>
-											</div>
-											<div class="causes-item__lower">
-												<div class="progress-bar">
-													<div class="progress-bar__inner" style="width: 50%;">
-														<div class="progress-bar__value">50%</div>
-													</div>
-												</div>
-												<div class="causes-item__details-holder">
-													<div class="causes-item__details-item"><span>Goal: </span><span>50 000$</span></div>
-													<div class="causes-item__details-item text-right"><span>Pledged: </span><span>25 000$</span></div>
-												</div>
-											</div>
-										</div><a class="button causes-item__button button--primary" href="#">+ Donate</a>
+										</div><a class="button dbox-donation-button causes-item__button button--primary" href="https://donorbox.org/contribuye-redcannabica-rd">+ Apoyanos</a>
 									</div>
 								</div>
 							</div>
@@ -592,161 +695,101 @@
 					</div>
 				</section>
 				<!-- causes end-->
-				<!-- projects start-->
-				<section class="section projects no-padding-top no-padding-bottom">
-					<div class="container">
-						<div class="row align-items-end margin-bottom">
-							<div class="col-lg-9">
-								<div class="heading heading--primary"><span class="heading__pre-title">What we Did</span>
-									<h2 class="heading__title"><span>Helpo</span> <span>Projects</span></h2>
-									<p class="no-margin-bottom">Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail, Canthigaster rostrata. Midshipman dartfish Modoc sucker, yellowtail kingfish </p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row no-gutters projects-masonry">
-						<div class="col-lg-6 col-xl-4 projects-masonry__item projects-masonry__item--height-1 projects-masonry__item--vertical">
-							<div class="projects-masonry__img"><img class="img--bg" src="img/projects_1.jpg" alt="img"/></div>
-							<div class="projects-masonry__text" style="background-color: #2EC774;">
-								<div class="projects-masonry__inner"><span class="projects-masonry__badge" style="background: #49C2DF;">Water Delivery</span>
-									<h3 class="projects-masonry__title"> <a href="cause-details.html">More than One Life Changed</a></h3>
-									<p>Rockweed gunnel; candlefish mail-cheeked fish, yellowtail snapper cuskfish elasmobranch seamoth triggerfish gar </p>
-									<div class="projects-masonry__details-holder">
-										<div class="projects-masonry__details-item"><span>Goal: </span><span>25 000$</span></div>
-										<div class="projects-masonry__details-item"><span>Date: </span><span>23 Jan'19</span></div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6 col-xl-8 projects-masonry__item projects-masonry__item--height-2 projects-masonry__item--horizontal">
-							<div class="projects-masonry__img"><img class="img--bg" src="img/projects_2.jpg" alt="img"/></div>
-							<div class="projects-masonry__text" style="background-color: #9BC35E;">
-								<div class="projects-masonry__inner"><span class="projects-masonry__badge" style="background: #F36F8F;">Medicine</span>
-									<h3 class="projects-masonry__title"> <a href="cause-details.html">Helpo for Help</a></h3>
-									<p>Gray eel-catfish longnose whiptail catfish smalleye squaretail queen danio unicorn fish shortnose greeneye fusilier fish silver carp</p>
-									<div class="projects-masonry__details-holder">
-										<div class="projects-masonry__details-item"><span>Goal: </span><span>25 000$</span></div>
-										<div class="projects-masonry__details-item"><span>Date: </span><span>23 Jan'19</span></div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6 col-xl-8 projects-masonry__item projects-masonry__item--height-1 projects-masonry__item--primary">
-							<div class="projects-masonry__img"><img class="img--bg" src="img/projects_3.jpg" alt="img"/>
-								<div class="projects-masonry__inner"><span class="projects-masonry__badge" style="background: #F8AC3A;">Food</span>
-									<h3 class="projects-masonry__title"> <a href="cause-details.html">Help for Children of the East</a></h3>
-									<p>Murray cod clownfish American sole rockfish dojo loach gulper, trout-perch footballfish, pelican eel. Spinefoot coelacanth eagle ray </p>
-									<div class="projects-masonry__details-holder">
-										<div class="projects-masonry__details-item"><span>Goal: </span><span>25 000$</span></div>
-										<div class="projects-masonry__details-item"><span>Date: </span><span>23 Jan'19</span></div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6 col-xl-4 projects-masonry__item projects-masonry__item--height-2 projects-masonry__item--primary">
-							<div class="projects-masonry__img"><img class="img--bg" src="img/projects_4.jpg" alt="img"/>
-								<div class="projects-masonry__inner"><span class="projects-masonry__badge" style="background: #2EC774;">Education</span>
-									<h3 class="projects-masonry__title"> <a href="cause-details.html">Help for Children of the East</a></h3>
-									<p>Murray cod clownfish American sole rockfish dojo loach gulper, trout-perch footballfish, pelican eel. Spinefoot coelacanth eagle ray </p>
-									<div class="projects-masonry__details-holder">
-										<div class="projects-masonry__details-item"><span>Goal: </span><span>25 000$</span></div>
-										<div class="projects-masonry__details-item"><span>Date: </span><span>23 Jan'19</span></div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6 col-xl-8 projects-masonry__item projects-masonry__item--height-2 projects-masonry__item--horizontal">
-							<div class="projects-masonry__img"><img class="img--bg" src="img/projects_5.jpg" alt="img"/></div>
-							<div class="projects-masonry__text" style="background-color: #E78F51;">
-								<div class="projects-masonry__inner"><span class="projects-masonry__badge" style="background: #2EC774;">Education</span>
-									<h3 class="projects-masonry__title"> <a href="cause-details.html">Help for Children of the East</a></h3>
-									<p>Murray cod clownfish American sole rockfish dojo loach gulper, trout-perch footballfish, pelican eel. Spinefoot coelacanth eagle ray </p>
-									<div class="projects-masonry__details-holder">
-										<div class="projects-masonry__details-item"><span>Goal: </span><span>25 000$</span></div>
-										<div class="projects-masonry__details-item"><span>Date: </span><span>23 Jan'19</span></div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6 col-xl-4 projects-masonry__item projects-masonry__item--height-2 projects-masonry__item--primary">
-							<div class="projects-masonry__img"><img class="img--bg" src="img/projects_6.jpg" alt="img"/>
-								<div class="projects-masonry__inner"><span class="projects-masonry__badge" style="background: #F36F8F;">Medicine</span>
-									<h3 class="projects-masonry__title"> <a href="cause-details.html">Helpo for Help</a></h3>
-									<p>Gray eel-catfish longnose whiptail catfish smalleye squaretail queen danio unicorn fish shortnose greeneye fusilier fish silver carp</p>
-									<div class="projects-masonry__details-holder">
-										<div class="projects-masonry__details-item"><span>Goal: </span><span>25 000$</span></div>
-										<div class="projects-masonry__details-item"><span>Date: </span><span>23 Jan'19</span></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-- projects end-->
+				<!-- include ../blocks/_projects/_projects-->
 				<!-- events start-->
-				<section class="section events"><img class="events__bg" src="img/events_bg.png" alt="img"/>
+				<section class="section events" id="events"><img class="events__bg" src="img/events_bg.png" alt="img"/>
 					<div class="container">
 						<div class="row margin-bottom">
 							<div class="col-12">
-								<div class="heading heading--primary heading--center"><span class="heading__pre-title">Events</span>
-									<h2 class="heading__title"><span>Helpo Holds</span> <span>for You</span></h2>
-									<p class="no-margin-bottom">Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail, Canthigaster rostrata. Midshipman dartfish</p>
+								<div class="heading heading--primary heading--center"><span class="heading__pre-title">Eventos</span>
+									<h2 class="heading__title"><span>RedCannabica </span> <span>te acompaña</span></h2>
+									<p class="no-margin-bottom">En nuestro portal comunitario organizamos mesas de trabajos virtuales y abiertas, donde toda la comunidad puede compartir ideas, discutir diferentes temas sobre la legalización del cannabis, y colaborar para crear una propuesta legislativa que incluya a todos</p>
 								</div>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-6 col-lg-4">
+							<div class="col-md-6 col-lg-3"><a href="http://redcannabica.info/es-ES/projects/social-impact-commission" target="_blank">
 								<div class="event-item">
 									<div class="event-item__img"><img class="img--bg" src="img/event_1.jpg" alt="img"/></div>
 									<div class="event-item__content">
-										<h6 class="event-item__title"><a href="#">Help for Language. Voluanteer</a></h6>
-										<p><b>Dark Spurt,</b> San Francisco, CA 94528, USA</p>
-										<p><b>September 30 - October 31,</b> 2019</p>
-										<p><b>10:00 AM - 18:00 PM,</b> Everyday</p>
+										<h6 class="event-item__title"><a href="#">Comisión de Impacto Social</a></h6>
+										<p><b>1° Sabado </b> de cada mes</p>
+										<p><b>3:00 AM - 4:00 PM,</b> AST</p>
 									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-lg-4">
+								</div></a></div>
+							<div class="col-md-6 col-lg-3"><a href="http://redcannabica.info/es-ES/projects/ethics-values-and-good-governance-committee" target="_blank">
+								<div class="event-item">
+									<div class="event-item__img"><img class="img--bg" src="img/event_1.jpg" alt="img"/></div>
+									<div class="event-item__content">
+										<h6 class="event-item__title"><a href="#">Comisión de Ética y Buen Gobierno</a></h6>
+										<p><b>1° Sabado </b> de cada mes</p>
+										<p><b>4:00 AM - 5:00 PM,</b> AST</p>
+									</div>
+								</div></a></div>
+							<div class="col-md-6 col-lg-3"><a href="http://redcannabica.info/es-ES/projects/legal-and-justice-commission" target="_blank">
 								<div class="event-item">
 									<div class="event-item__img"><img class="img--bg" src="img/event_2.jpg" alt="img"/></div>
 									<div class="event-item__content">
-										<h6 class="event-item__title"><a href="#">The Culture of Africa. Rebirth</a></h6>
-										<p><b>Dark Spurt,</b> San Francisco, CA 94528, USA</p>
-										<p><b>September 30 - October 31,</b> 2019</p>
-										<p><b>10:00 AM - 18:00 PM,</b> Everyday</p>
+										<h6 class="event-item__title"><a href="#">Comisión Jurídica y de Justicia</a></h6>
+										<p><b>2° Sabado </b> de cada mes</p>
+										<p><b>3:00 AM - 4:00 PM,</b> AST</p>
 									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-lg-4">
+								</div></a></div>
+							<div class="col-md-6 col-lg-3"><a href="http://redcannabica.info/es-ES/projects/financial-economic-commission" target="_blank">
 								<div class="event-item">
 									<div class="event-item__img"><img class="img--bg" src="img/event_3.jpg" alt="img"/></div>
 									<div class="event-item__content">
-										<h6 class="event-item__title"><a href="#">Help for Language. Voluanteer</a></h6>
-										<p><b>Dark Spurt,</b> San Francisco, CA 94528, USA</p>
-										<p><b>April 15 - April 20,</b> 2019</p>
-										<p><b>10:00 AM - 15:00 PM,</b> Everyday</p>
+										<h6 class="event-item__title"><a href="#">Comisión Económico Financiera</a></h6>
+										<p><b>2° Sabado </b> de cada mes</p>
+										<p><b>3:00 AM - 4:00 PM,</b> AST</p>
 									</div>
-								</div>
-							</div>
+								</div></a></div>
+							<div class="col-md-6 col-lg-3"><a href="http://redcannabica.info/es-ES/projects/communication-and-networks-commission" target="_blank">
+								<div class="event-item">
+									<div class="event-item__img"><img class="img--bg" src="img/event_1.jpg" alt="img"/></div>
+									<div class="event-item__content">
+										<h6 class="event-item__title"><a href="#">Comisión de Comunicación y Redes</a></h6>
+										<p><b>2° Sabado </b> de cada mes</p>
+										<p><b>3:00 AM - 4:00 PM,</b> AST</p>
+									</div>
+								</div></a></div>
+							<div class="col-md-6 col-lg-3"><a href="http://redcannabica.info/es-ES/projects/territorial-coordination-commission" target="_blank">
+								<div class="event-item">
+									<div class="event-item__img"><img class="img--bg" src="img/event_1.jpg" alt="img"/></div>
+									<div class="event-item__content">
+										<h6 class="event-item__title"><a href="#">Comisión de Coordinación Territorial</a></h6>
+										<p><b>3° Sabado </b> de cada mes</p>
+										<p><b>4:00 AM - 5:00 PM,</b> AST</p>
+									</div>
+								</div></a></div>
+							<div class="col-md-6 col-lg-3"><a href="http://redcannabica.info/es-ES/projects/education-and-culture-commission" target="_blank">
+								<div class="event-item">
+									<div class="event-item__img"><img class="img--bg" src="img/event_2.jpg" alt="img"/></div>
+									<div class="event-item__content">
+										<h6 class="event-item__title"><a href="#">Comisión de Educación y Cultura</a></h6>
+										<p><b>3° Sabado </b> de cada mes</p>
+										<p><b>3:00 AM - 4:00 PM,</b> AST</p>
+									</div>
+								</div></a></div>
 						</div>
 						<div class="row">
-							<div class="col-12 text-center"><a class="button button--primary" href="#">View all events</a></div>
+							<div class="col-12 text-center"><a class="button button--primary" href="http://redcannabica.info/es-ES/" target="_blank">Community Platform</a></div>
 						</div>
 					</div>
 				</section>
 				<!-- events end-->
 				<!-- text section start-->
-				<section class="section text-section"><img class="text-section__bg" src="img/text-section.png" alt="img"/>
+				<section class="section text-section" id="text-section"><img class="text-section__bg" src="img/text-section.png" alt="img"/>
 					<div class="container">
 						<div class="row">
 							<div class="col-12 text-center">
-								<h2 class="text-section__heading">Volunteer</h2>
+								<h2 class="text-section__heading">Voluntarios</h2>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-lg-8 offset-lg-4 col-xl-7 offset-xl-4">
-								<h3 class="text-section__title">Delivering help and hope <br/>to children through sponsorship.</h3>
-								<p>Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail, Canthigaster rostrata. Midshipman dartfish Modoc sucker, yellowtail kingfish</p><a class="button button--primary" href="#">Become a Volunteer</a>
+								<h3 class="text-section__title">Hagamos la diferencia <br/> contribuyendo a la causa.</h3>
+								<p>unete a nuestro esfuerzo de llevar esperanza a miles de consumidores, pacientes, profesionales, padres y madres que luchan a diario por sus derechos a acceder a la planta.</p><a class="button button--primary" href="#">Conviértete en voluntario</a>
 							</div>
 						</div>
 					</div>
@@ -762,8 +805,8 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-xl-4">
-								<div class="heading heading--primary"><span class="heading__pre-title">Testimonials</span>
-									<h2 class="heading__title"><span>What People</span><br/><span>Says About Us</span></h2>
+								<div class="heading heading--primary"><span class="heading__pre-title">Testimonios</span>
+									<h2 class="heading__title"><span>Lo que dice la gente</span><br/><span>sobre nosotros</span></h2>
 								</div>
 								<!-- slider nav start-->
 								<div class="slider__nav testimonials-style-2__nav">
@@ -806,12 +849,12 @@
 				</section>
 				<!-- testimonials style-2 end-->
 				<!-- blog start-->
-				<section class="section blog"><img class="blog__bg" src="img/blog_bg.png" alt="img"/>
+				<section class="section blog" id="blog"><img class="blog__bg" src="img/blog_bg.png" alt="img"/>
 					<div class="container">
 						<div class="row margin-bottom">
 							<div class="col-12">
 								<div class="heading heading--primary heading--center"><span class="heading__pre-title">News</span>
-									<h2 class="heading__title no-margin-bottom"><span>Helpo</span> <span>Blog</span></h2>
+									<h2 class="heading__title no-margin-bottom"><span>RedCannabica</span> <span>Blog</span></h2>
 								</div>
 							</div>
 						</div>
@@ -875,8 +918,8 @@
 					<div class="container">
 						<div class="row margin-bottom">
 							<div class="col-12">
-								<div class="heading heading--primary heading--center"><span class="heading__pre-title">Donors</span>
-									<h2 class="heading__title no-margin-bottom"><span>Who Help</span> <span>Us</span></h2>
+								<div class="heading heading--primary heading--center"><span class="heading__pre-title">Organizaciones</span>
+									<h2 class="heading__title no-margin-bottom"><span>Que nos</span> <span>ayudan</span></h2>
 								</div>
 							</div>
 						</div>
@@ -910,8 +953,8 @@
 					<div class="container">
 						<div class="row align-items-end margin-bottom">
 							<div class="col-md-7 col-lg-8">
-								<div class="heading heading--primary"><span class="heading__pre-title">Testimonials</span>
-									<h2 class="heading__title no-margin-bottom"><span># helpocharity</span></h2>
+								<div class="heading heading--primary"><span class="heading__pre-title">Testimonios</span>
+									<h2 class="heading__title no-margin-bottom"><span># redcannabicard</span></h2>
 								</div>
 							</div>
 							<div class="col-md-5 col-lg-4 text-md-right">
@@ -936,12 +979,12 @@
 					<div class="container">
 						<div class="row align-items-end">
 							<div class="col-lg-4">
-								<h2 class="subscribe__title">Subscribe.</h2>
+								<h2 class="subscribe__title">Suscríbete.</h2>
 							</div>
 							<div class="col-lg-8">
 								<form class="subscribe-form" action="javascript:void(0);">
 									<input class="subscribe-form__input" type="email" name="email" placeholder="Enter your E-mail" required="required"/>
-									<input class="subscribe-form__submit" type="submit" value="Submit"/>
+									<input class="subscribe-form__submit" type="submit" value="Envia"/>
 								</form>
 							</div>
 						</div>
@@ -965,11 +1008,10 @@
 							<!-- footer socials end-->
 						</div>
 						<div class="col-sm-6 col-lg-3">
-							<h4 class="footer__title">Contacts</h4>
+							<h4 class="footer__title">Contactos</h4>
 							<div class="footer-contacts">
-								<p class="footer-contacts__address">Elliott Ave, Parkville VIC 3052, Melbourne Canada</p>
-								<p class="footer-contacts__phone">Phone: <a href="tel:+31859644725">+31 85 964 47 25</a></p>
-								<p class="footer-contacts__mail">Email: <a href="mailto:support@helpo.org">support@helpo.org</a></p>
+								<p class="footer-contacts__phone">Phone: <a href="tel:+XXXXXXXXX">+XXX XXXX</a></p>
+								<p class="footer-contacts__mail">Email: <a href="mailto:redcannabicard@gmail.com">redcannabicard@gmail.com</a></p>
 							</div>
 						</div>
 						<div class="col-sm-6 col-lg-3">
@@ -978,19 +1020,16 @@
 							<nav>
 								<ul class="footer-menu">
 									<li class="footer-menu__item footer-menu__item--active"><a class="footer-menu__link" href="index.html">Home</a></li>
-									<li class="footer-menu__item"><a class="footer-menu__link" href="#">Blog</a></li>
+									<li class="footer-menu__item"><a class="footer-menu__link" href="blog.html">Blog</a></li>
 									<li class="footer-menu__item"><a class="footer-menu__link" href="about.html">About</a></li>
-									<li class="footer-menu__item"><a class="footer-menu__link" href="#">Contacts</a></li>
-									<li class="footer-menu__item"><a class="footer-menu__link" href="#">Pages</a></li>
-									<li class="footer-menu__item"><a class="footer-menu__link" href="#">Elements</a></li>
-									<li class="footer-menu__item"><a class="footer-menu__link" href="causes.html">Causes</a></li>
+									<li class="footer-menu__item"><a class="footer-menu__link" href="contacts.html">Contacts</a></li>
 								</ul>
 							</nav>
 							<!-- footer nav end-->
 						</div>
 						<div class="col-sm-6 col-lg-3">
-							<h4 class="footer__title">Donate</h4>
-							<p>Help Us Change the Lives of Children in World</p><a class="button footer__button button--filled" href="#">Donate</a>
+							<h4 class="footer__title">Apoyanos</h4>
+							<p>Ayúdanos a cambiar la vida de miles de pacientes</p><a class="dbox-donation-button button footer__button button--filled" href="https://donorbox.org/contribuye-redcannabica-rd">Apoyanos</a>
 						</div>
 					</div>
 					<div class="row align-items-baseline">

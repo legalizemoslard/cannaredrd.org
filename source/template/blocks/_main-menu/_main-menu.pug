@@ -3,12 +3,16 @@
 nav
 	ul.main-menu(class=(type === "inner" ? "main-menu--inner" : undefined))
 
-		li.main-menu__item.main-menu__item--has-child(class=(type === "front" ? "main-menu__item--active" : undefined))
-			a.main-menu__link(href="javascript:void(0);")
+		li.main-menu__item
+			a.main-menu__link(href="/")
 				span Home
 
+		li.main-menu__item
+			a.anchor.main-menu__link(href="#about")
+				span Quienes somos
+
 			// sub menu start
-			ul.main-menu__sub-list
+			// ul.main-menu__sub-list
 				li(class=(page === "index" ? "item--active" : undefined))
 					a(href="index.html")
 						span 01 Home Color Style
@@ -29,7 +33,7 @@ nav
 						span 06 Home Monochrome
 			// sub menu end
 
-		li.main-menu__item.main-menu__item--has-child(class=(dest === "pages" ? "main-menu__item--active" : undefined))
+		// li.main-menu__item.main-menu__item--has-child(class=(dest === "pages" ? "main-menu__item--active" : undefined))
 			a.main-menu__link(href="javascript:void(0);")
 				span Pages
 
@@ -83,11 +87,11 @@ nav
 			// sub menu end
 
 		li.main-menu__item.main-menu__item--has-child(class=(dest === "causes-pages" ? "main-menu__item--active" : undefined))
-			a.main-menu__link(href="javascript:void(0);")
-				span Causes
+			a.anchor.main-menu__link(href="#causes")
+				span Causas
 
 			// sub menu start
-			ul.main-menu__sub-list
+			// ul.main-menu__sub-list
 				li(class=(page === "causes" ? "item--active" : undefined))
 					a(href="causes.html")
 						span Causes 1
@@ -102,12 +106,12 @@ nav
 						span Cause Details
 			// sub menu end
 
-		li.main-menu__item.main-menu__item--has-child(class=(dest === "shop-inner" ? "main-menu__item--active" : undefined))
-			a.main-menu__link(href="javascript:void(0);")
-				span Shop
+		li.main-menu__item
+			a.anchor.main-menu__link(href="#events")
+				span Eventos
 
 			// sub menu start
-			ul.main-menu__sub-list
+			// ul.main-menu__sub-list
 				li(class=(page === "shop" ? "item--active" : undefined))
 					a(href="shop.html")
 						span Catalog Page
@@ -125,16 +129,16 @@ nav
 						span Shop Account
 			// sub menu end
 
-		li.main-menu__item(class=(page === "contacts" ? "main-menu__item--active" : undefined))
-			a.main-menu__link(href="contacts.html")
-				span Contacts
+		li.main-menu__item
+			a.anchor.main-menu__link(href="#blog")
+				span Blog
 
-		li.main-menu__item.main-menu__item--has-child(class=(dest === "elements" ? "main-menu__item--active" : undefined))
-			a.main-menu__link(href="javascript:void(0);")
-				span Elements
+		li.main-menu__item
+			a.main-menu__link(href="contacts.html")
+				span Contactos
 
 			// sub menu start
-			ul.main-menu__sub-list
+			// ul.main-menu__sub-list
 				li(class=(page === "alerts" ? "item--active" : undefined))
 					a(href="alerts.html")
 						span Alerts

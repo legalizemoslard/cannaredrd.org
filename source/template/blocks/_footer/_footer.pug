@@ -28,11 +28,10 @@ footer.footer
 
 			.col-sm-6.col-lg-3
 
-				h4.footer__title Contacts
+				h4.footer__title Contactos
 				.footer-contacts
-					p.footer-contacts__address Elliott Ave, Parkville VIC 3052, Melbourne Canada
-					p.footer-contacts__phone Phone: #[a(href="tel:+31859644725") +31 85 964 47 25]
-					p.footer-contacts__mail Email: #[a(href="mailto:support@helpo.org") support@helpo.org]
+					p.footer-contacts__phone Phone: #[a(href="tel:+XXXXXXXXX") +XXX XXXX]
+					p.footer-contacts__mail Email: #[a(href="mailto:redcannabicard@gmail.com") redcannabicard@gmail.com]
 
 			.col-sm-6.col-lg-3
 
@@ -43,25 +42,19 @@ footer.footer
 					ul.footer-menu
 						li.footer-menu__item(class=(type === "front" ? "footer-menu__item--active" : undefined))
 							a.footer-menu__link(href="index.html") Home
-						li.footer-menu__item
-							a.footer-menu__link(href="#") Blog
+						li.footer-menu__item(class=(page === "blog" ? "footer-menu__item--active" : undefined))
+							a.footer-menu__link(href="blog.html") Blog
 						li.footer-menu__item(class=(page === "about" ? "footer-menu__item--active" : undefined))
 							a.footer-menu__link(href="about.html") About
 						li.footer-menu__item(class=(page === "contacts" ? "footer-menu__item--active" : undefined))
-							a.footer-menu__link(href="#") Contacts
-						li.footer-menu__item
-							a.footer-menu__link(href="#") Pages
-						li.footer-menu__item
-							a.footer-menu__link(href="#") Elements
-						li.footer-menu__item(class=(page === "causes" ? "footer-menu__item--active" : undefined))
-							a.footer-menu__link(href="causes.html") Causes
+							a.footer-menu__link(href="contacts.html") Contacts
 				// footer nav end
 
 			.col-sm-6.col-lg-3
 
-				h4.footer__title Donate
-				p Help Us Change the Lives of Children in World
-				a.button.footer__button.button--filled(href="#") Donate
+				h4.footer__title Apoyanos
+				p Ayúdanos a cambiar la vida de miles de pacientes
+				a.dbox-donation-button.button.footer__button.button--filled(href="https://donorbox.org/contribuye-redcannabica-rd") Apoyanos
 
 		.row.align-items-baseline
 

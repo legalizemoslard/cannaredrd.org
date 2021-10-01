@@ -7,9 +7,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 		<link rel="shortcut icon" href="img/favicon.ico"/>
-		<title>Helpo HTML Template</title>
+		<title>RedCannabica RD | Legalicemos la salud</title>
 		<!-- styles-->
 		<link rel="stylesheet" href="css/styles.min.css"/>
+		<!-- donorbox-->
+		<script type="text/javascript" defer="" src="https://donorbox.org/install-popup-button.js"></script>
+		<script type="text/javascript">
+			// Scroll certain amounts from current position 
+			window.scrollBy({ 
+				top: 100, // could be negative value
+				left: 0, 
+				behavior: 'smooth' 
+			});
+
+		</script>
 		<!-- web-font loader-->
 		<script>
 			WebFontConfig = {
@@ -49,88 +60,168 @@
 					</svg></span>
 				<div class="aside-dropdown__item d-lg-none d-block">
 					<ul class="aside-menu">
-						<li class="aside-menu__item aside-menu__item--has-child"><a class="aside-menu__link" href="javascript:void(0);"><span>Home</span></a>
+						<li class="aside-menu__item"><a class="aside-menu__link" href="/"><span>Home</span></a>
 							<!-- sub menu start-->
-							<ul class="aside-menu__sub-list">
-								<li><a href="index.html"><span>01 Home Color Style</span></a></li>
-								<li><a href="front_2.html"> <span>02 Home Color Style</span></a></li>
-								<li><a href="front_3.html"><span>03 Home Color Style</span></a></li>
-								<li><a href="mono/index.html"><span>04 Home Monochrome</span></a></li>
-								<li><a href="mono/front_2.html"><span>05 Home Monochrome</span></a></li>
-								<li><a href="mono/front_3.html"><span>06 Home Monochrome</span></a></li>
-							</ul>
+							<!-- ul.aside-menu__sub-list
+							li(class=(page === "index" ? "item--active" : undefined))
+								a(href="index.html")
+									span 01 Home Color Style
+							li(class=(page === "front_2" ? "item--active" : undefined))
+								a(href="front_2.html") 
+									span 02 Home Color Style
+							li(class=(page === "front_3" ? "item--active" : undefined))
+								a(href="front_3.html")
+									span 03 Home Color Style
+							li
+								a(href="mono/index.html")
+									span 04 Home Monochrome
+							li
+								a(href="mono/front_2.html")
+									span 05 Home Monochrome
+							li
+								a(href="mono/front_3.html")
+									span 06 Home Monochrome
+							-->
 							<!-- sub menu end-->
 						</li>
-						<li class="aside-menu__item aside-menu__item--has-child aside-menu__item--active"><a class="aside-menu__link" href="javascript:void(0);"><span>Pages</span></a>
+						<li class="aside-menu__item"><a class="anchor aside-menu__link" href="#about"><span>Quienes somos</span></a>
 							<!-- sub menu start-->
-							<ul class="aside-menu__sub-list">
-								<li><a href="about.html"><span>About</span></a></li>
-								<li><a href="typography.html"> <span>Typography</span></a></li>
-								<li><a href="donors.html"><span>Donors & Partners</span></a></li>
-								<li><a href="volunteer.html"><span>Become a Volunteer</span></a></li>
-								<li><a href="events.html"><span>Events</span></a></li>
-								<li><a href="event-details.html"><span>Event Details</span></a></li>
-								<li><a href="stories.html"><span>Stories</span></a></li>
-								<li><a href="story-details.html"><span>Story Details</span></a></li>
-								<li class="item--active"><a href="blog.html"><span>Blog</span></a></li>
-								<li><a href="blog-post.html"><span>Blog Post</span></a></li>
-								<li><a href="gallery.html"><span>Gallery</span></a></li>
-								<li><a href="pricing.html"><span>Pricing Plans</span></a></li>
-								<li><a href="faq.html"><span>FAQ</span></a></li>
-								<li><a href="404.html"><span>404 Page</span></a></li>
-							</ul>
+							<!-- ul.aside-menu__sub-list
+							li(class=(page === "about" ? "item--active" : undefined))
+								a(href="about.html")
+									span About
+							li(class=(page === "typography" ? "item--active" : undefined))
+								a(href="typography.html") 
+									span Typography
+							li(class=(page === "donors" ? "item--active" : undefined))
+								a(href="donors.html")
+									span Donors & Partners
+							li(class=(page === "volunteer" ? "item--active" : undefined))
+								a(href="volunteer.html")
+									span Become a Volunteer
+							li(class=(page === "events" ? "item--active" : undefined))
+								a(href="events.html")
+									span Events
+							li(class=(page === "event-details" ? "item--active" : undefined))
+								a(href="event-details.html")
+									span Event Details
+							li(class=(page === "stories" ? "item--active" : undefined))
+								a(href="stories.html")
+									span Stories
+							li(class=(page === "storie-details" ? "item--active" : undefined))
+								a(href="story-details.html")
+									span Story Details
+							li(class=(page === "blog" ? "item--active" : undefined))
+								a(href="blog.html")
+									span Blog
+							li(class=(page === "blog-post" ? "item--active" : undefined))
+								a(href="blog-post.html")
+									span Blog Post
+							li(class=(page === "gallery" ? "item--active" : undefined))
+								a(href="gallery.html")
+									span Gallery
+							li(class=(page === "pricing" ? "item--active" : undefined))
+								a(href="pricing.html")
+									span Pricing Plans
+							li(class=(page === "faq" ? "item--active" : undefined))
+								a(href="faq.html")
+									span FAQ
+							li(class=(page === "404" ? "item--active" : undefined))
+								a(href="404.html")
+									span 404 Page
+							-->
 							<!-- sub menu end-->
 						</li>
-						<li class="aside-menu__item aside-menu__item--has-child"><a class="aside-menu__link" href="javascript:void(0);"><span>Causes</span></a>
+						<li class="aside-menu__item"><a class="anchor aside-menu__link" href="#causes"><span>Causas</span></a>
 							<!-- sub menu start-->
-							<ul class="aside-menu__sub-list">
-								<li><a href="causes.html"><span>Causes 1</span></a></li>
-								<li><a href="causes_2.html"> <span>Causes 2</span></a></li>
-								<li><a href="causes_3.html"><span>Causes 3</span></a></li>
-								<li><a href="cause-details.html"><span>Cause Details</span></a></li>
-							</ul>
+							<!-- ul.aside-menu__sub-list
+							li(class=(page === "causes" ? "item--active" : undefined))
+								a(href="causes.html")
+									span Causes 1
+							li(class=(page === "causes_2" ? "item--active" : undefined))
+								a(href="causes_2.html") 
+									span Causes 2
+							li(class=(page === "causes_3" ? "item--active" : undefined))
+								a(href="causes_3.html")
+									span Causes 3
+							li(class=(page === "cause_details" ? "item--active" : undefined))
+								a(href="cause-details.html")
+									span Cause Details
+							-->
 							<!-- sub menu end-->
 						</li>
-						<li class="aside-menu__item aside-menu__item--has-child"><a class="aside-menu__link" href="javascript:void(0);"><span>Shop</span></a>
+						<li class="aside-menu__item"><a class="anchor aside-menu__link" href="#events"><span>Eventos </span></a>
 							<!-- sub menu start-->
-							<ul class="aside-menu__sub-list">
-								<li><a href="shop.html"><span>Catalog Page</span></a></li>
-								<li><a href="shop-product.html"><span>Shop Product</span></a></li>
-								<li><a href="shop-cart.html"><span>Shop Cart</span></a></li>
-								<li><a href="shop-checkout.html"><span>Shop Checkout</span></a></li>
-								<li><a href="shop-account.html"><span>Shop Account</span></a></li>
-							</ul>
+							<!-- ul.aside-menu__sub-list
+							li(class=(page === "shop" ? "item--active" : undefined))
+								a(href="shop.html")
+									span Catalog Page
+							li(class=(page === "shop-product" ? "item--active" : undefined))
+								a(href="shop-product.html")
+									span Shop Product
+							li(class=(page === "cart" ? "item--active" : undefined))
+								a(href="shop-cart.html")
+									span Shop Cart
+							li(class=(page === "checkout" ? "item--active" : undefined))
+								a(href="shop-checkout.html")
+									span Shop Checkout
+							li(class=(page === "account" ? "item--active" : undefined))
+								a(href="shop-account.html")
+									span Shop Account
+							-->
 							<!-- sub menu end-->
 						</li>
-						<li class="aside-menu__item"><a class="aside-menu__link" href="contacts.html"><span>Contacts</span></a></li>
-						<li class="aside-menu__item aside-menu__item--has-child"><a class="aside-menu__link" href="javascript:void(0);"><span>Elements</span></a>
-							<!-- sub menu start-->
-							<ul class="aside-menu__sub-list">
-								<li><a href="alerts.html"><span>Alerts</span></a></li>
-								<li><a href="team.html"><span>Team</span></a></li>
-								<li><a href="testimonials.html"><span>Testimonials</span></a></li>
-								<li><a href="accordion.html"><span>Accordion</span></a></li>
-								<li><a href="tabs.html"><span>Tabs</span></a></li>
-								<li><a href="pricing-plan.html"><span>Pricing Plan</span></a></li>
-								<li><a href="counters.html"><span>Counters</span></a></li>
-								<li><a href="icons.html"><span>Icons</span></a></li>
-							</ul>
-							<!-- sub menu end-->
-						</li>
+						<li class="aside-menu__item"><a class="anchor aside-menu__link" href="#blog"><span>Blog</span></a></li>
+						<li class="aside-menu__item"><a class="aside-menu__link" href="contacts.html"><span>Contactos</span></a></li>
+						<!-- li.aside-menu__item.aside-menu__item--has-child(class=(dest === "elements" ? "aside-menu__item--active" : undefined))
+						a.aside-menu__link(href="javascript:void(0);")
+							span Elements
+
+						// sub menu start
+						ul.aside-menu__sub-list
+							li(class=(page === "alerts" ? "item--active" : undefined))
+								a(href="alerts.html")
+									span Alerts
+							li(class=(page === "team" ? "item--active" : undefined))
+								a(href="team.html")
+									span Team
+							li(class=(page === "testimonials" ? "item--active" : undefined))
+								a(href="testimonials.html")
+									span Testimonials
+							li(class=(page === "accordion" ? "item--active" : undefined))
+								a(href="accordion.html")
+									span Accordion
+							li(class=(page === "tabs" ? "item--active" : undefined))
+								a(href="tabs.html")
+									span Tabs
+							li(class=(page === "pricing-plan" ? "item--active" : undefined))
+								a(href="pricing-plan.html")
+									span Pricing Plan
+							li(class=(page === "counters" ? "item--active" : undefined))
+								a(href="counters.html")
+									span Counters
+							li(class=(page === "icons" ? "item--active" : undefined))
+								a(href="icons.html")
+									span Icons
+
+						// sub menu end
+
+						-->
 					</ul>
 				</div>
 				<div class="aside-dropdown__item">
 					<!-- aside menu start-->
 					<ul class="aside-menu">
-						<li class="aside-menu__item"><a class="aside-menu__link" href="#">Documents</a></li>
-						<li class="aside-menu__item"><a class="aside-menu__link" href="#">Information</a></li>
-						<li class="aside-menu__item"><a class="aside-menu__link" href="#">Additional Pages</a></li>
-						<li class="aside-menu__item"><a class="aside-menu__link" href="#">Elements</a></li>
-						<li class="aside-menu__item"><a class="aside-menu__link" href="#">Contacts</a></li>
+						<li class="aside-menu__item"><a class="aside-menu__link" href="/">Home</a></li>
+						<li class="aside-menu__item"><a class="anchor aside-menu__link" href="#about">Quienes somos</a></li>
+						<li class="aside-menu__item"><a class="anchor aside-menu__link" href="#causes">Causas</a></li>
+						<li class="aside-menu__item"><a class="anchor aside-menu__link" href="#eventos">Eventos</a></li>
+						<li class="aside-menu__item"><a class="anchor aside-menu__link" href="#blog">Blog</a></li>
+						<li class="aside-menu__item"><a class="aside-menu__link" href="contacts.html">Contacts</a></li>
 					</ul>
 					<!-- aside menu end-->
-					<div class="aside-inner"><span class="aside-inner__title">Email</span><a class="aside-inner__link" href="mailto:support@helpo.org">support@helpo.org</a></div>
-					<div class="aside-inner"><span class="aside-inner__title">Phone numbers</span><a class="aside-inner__link" href="tel:+180012345678">+ 1800 - 123 456 78</a><a class="aside-inner__link" href="tel:+18009756511">+ 1800 - 975 65 11</a></div>
+					<div class="aside-inner"><span class="aside-inner__title">Email</span><a class="aside-inner__link" href="mailto:redcannabicard@gmail.com">redcannabicard@gmail.com</a></div>
+					<div class="aside-inner"><span class="aside-inner__title">Phone numbers</span><a class="aside-inner__link" href="tel:+180012345678">+ XXX XXXX</a></div>
 					<ul class="aside-socials">
 						<li class="aside-socials__item"><a class="aside-socials__link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 						<li class="aside-socials__item"><a class="aside-socials__link" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
@@ -138,7 +229,7 @@
 						<li class="aside-socials__item"><a class="aside-socials__link" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 					</ul>
 				</div>
-				<div class="aside-dropdown__item"><a class="button button--squared" href="#"><span>Donate</span></a></div>
+				<div class="aside-dropdown__item"><a class="button dbox-donation-button button button--squared" href="https://donorbox.org/contribuye-redcannabica-rd"><span>Apoya</span></a></div>
 				</div>
 			</div>
 			<!-- aside dropdown end-->
@@ -156,73 +247,154 @@
 							<!-- main menu start-->
 							<nav>
 								<ul class="main-menu main-menu--inner">
-									<li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="javascript:void(0);"><span>Home</span></a>
+									<li class="main-menu__item"><a class="main-menu__link" href="/"><span>Home</span></a></li>
+									<li class="main-menu__item"><a class="anchor main-menu__link" href="#about"><span>Quienes somos</span></a>
 										<!-- sub menu start-->
-										<ul class="main-menu__sub-list">
-											<li><a href="index.html"><span>01 Home Color Style</span></a></li>
-											<li><a href="front_2.html"> <span>02 Home Color Style</span></a></li>
-											<li><a href="front_3.html"><span>03 Home Color Style</span></a></li>
-											<li><a href="mono/index.html"><span>04 Home Monochrome</span></a></li>
-											<li><a href="mono/front_2.html"><span>05 Home Monochrome</span></a></li>
-											<li><a href="mono/front_3.html"><span>06 Home Monochrome</span></a></li>
-										</ul>
+										<!-- ul.main-menu__sub-list
+										li(class=(page === "index" ? "item--active" : undefined))
+											a(href="index.html")
+												span 01 Home Color Style
+										li(class=(page === "front_2" ? "item--active" : undefined))
+											a(href="front_2.html") 
+												span 02 Home Color Style
+										li(class=(page === "front_3" ? "item--active" : undefined))
+											a(href="front_3.html")
+												span 03 Home Color Style
+										li
+											a(href="mono/index.html")
+												span 04 Home Monochrome
+										li
+											a(href="mono/front_2.html")
+												span 05 Home Monochrome
+										li
+											a(href="mono/front_3.html")
+												span 06 Home Monochrome
+										-->
 										<!-- sub menu end-->
 									</li>
-									<li class="main-menu__item main-menu__item--has-child main-menu__item--active"><a class="main-menu__link" href="javascript:void(0);"><span>Pages</span></a>
+									<!-- li.main-menu__item.main-menu__item--has-child(class=(dest === "pages" ? "main-menu__item--active" : undefined))
+									a.main-menu__link(href="javascript:void(0);")
+										span Pages
+
+									// sub menu start
+									ul.main-menu__sub-list.sub-list--style-2
+										li(class=(page === "about" ? "item--active" : undefined))
+											a(href="about.html")
+												span About
+										li(class=(page === "typography" ? "item--active" : undefined))
+											a(href="typography.html") 
+												span Typography
+										li(class=(page === "donors" ? "item--active" : undefined))
+											a(href="donors.html")
+												span Donors & Partners
+										li(class=(page === "volunteer" ? "item--active" : undefined))
+											a(href="volunteer.html")
+												span Become a Volunteer
+										li(class=(page === "member" ? "item--active" : undefined))
+											a(href="team-member.html")
+												span Team Member
+										li(class=(page === "events" ? "item--active" : undefined))
+											a(href="events.html")
+												span Events
+										li(class=(page === "event-details" ? "item--active" : undefined))
+											a(href="event-details.html")
+												span Event Details
+										li(class=(page === "stories" ? "item--active" : undefined))
+											a(href="stories.html")
+												span Stories
+										li(class=(page === "storie-details" ? "item--active" : undefined))
+											a(href="story-details.html")
+												span Story Details
+										li(class=(page === "blog" ? "item--active" : undefined))
+											a(href="blog.html")
+												span Blog
+										li(class=(page === "blog-post" ? "item--active" : undefined))
+											a(href="blog-post.html")
+												span Blog Post
+										li(class=(page === "gallery" ? "item--active" : undefined))
+											a(href="gallery.html")
+												span Gallery
+										li(class=(page === "pricing" ? "item--active" : undefined))
+											a(href="pricing.html")
+												span Pricing Plans
+										li(class=(page === "faq" ? "item--active" : undefined))
+											a(href="faq.html")
+												span FAQ
+										li(class=(page === "404" ? "item--active" : undefined))
+											a(href="404.html")
+												span 404 Page
+									// sub menu end
+
+									-->
+									<li class="main-menu__item main-menu__item--has-child"><a class="anchor main-menu__link" href="#causes"><span>Causas</span></a>
 										<!-- sub menu start-->
-										<ul class="main-menu__sub-list sub-list--style-2">
-											<li><a href="about.html"><span>About</span></a></li>
-											<li><a href="typography.html"> <span>Typography</span></a></li>
-											<li><a href="donors.html"><span>Donors & Partners</span></a></li>
-											<li><a href="volunteer.html"><span>Become a Volunteer</span></a></li>
-											<li><a href="team-member.html"><span>Team Member</span></a></li>
-											<li><a href="events.html"><span>Events</span></a></li>
-											<li><a href="event-details.html"><span>Event Details</span></a></li>
-											<li><a href="stories.html"><span>Stories</span></a></li>
-											<li><a href="story-details.html"><span>Story Details</span></a></li>
-											<li class="item--active"><a href="blog.html"><span>Blog</span></a></li>
-											<li><a href="blog-post.html"><span>Blog Post</span></a></li>
-											<li><a href="gallery.html"><span>Gallery</span></a></li>
-											<li><a href="pricing.html"><span>Pricing Plans</span></a></li>
-											<li><a href="faq.html"><span>FAQ</span></a></li>
-											<li><a href="404.html"><span>404 Page</span></a></li>
-										</ul>
+										<!-- ul.main-menu__sub-list
+										li(class=(page === "causes" ? "item--active" : undefined))
+											a(href="causes.html")
+												span Causes 1
+										li(class=(page === "causes_2" ? "item--active" : undefined))
+											a(href="causes_2.html") 
+												span Causes 2
+										li(class=(page === "causes_3" ? "item--active" : undefined))
+											a(href="causes_3.html")
+												span Causes 3
+										li(class=(page === "cause_details" ? "item--active" : undefined))
+											a(href="cause-details.html")
+												span Cause Details
+										-->
 										<!-- sub menu end-->
 									</li>
-									<li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="javascript:void(0);"><span>Causes</span></a>
+									<li class="main-menu__item"><a class="anchor main-menu__link" href="#events"><span>Eventos</span></a>
 										<!-- sub menu start-->
-										<ul class="main-menu__sub-list">
-											<li><a href="causes.html"><span>Causes 1</span></a></li>
-											<li><a href="causes_2.html"> <span>Causes 2</span></a></li>
-											<li><a href="causes_3.html"><span>Causes 3</span></a></li>
-											<li><a href="cause-details.html"><span>Cause Details</span></a></li>
-										</ul>
+										<!-- ul.main-menu__sub-list
+										li(class=(page === "shop" ? "item--active" : undefined))
+											a(href="shop.html")
+												span Catalog Page
+										li(class=(page === "shop-product" ? "item--active" : undefined))
+											a(href="shop-product.html")
+												span Shop Product
+										li(class=(page === "cart" ? "item--active" : undefined))
+											a(href="shop-cart.html")
+												span Shop Cart
+										li(class=(page === "checkout" ? "item--active" : undefined))
+											a(href="shop-checkout.html")
+												span Shop Checkout
+										li(class=(page === "account" ? "item--active" : undefined))
+											a(href="shop-account.html")
+												span Shop Account
+										-->
 										<!-- sub menu end-->
 									</li>
-									<li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="javascript:void(0);"><span>Shop</span></a>
+									<li class="main-menu__item"><a class="anchor main-menu__link" href="#blog"><span>Blog</span></a></li>
+									<li class="main-menu__item"><a class="main-menu__link" href="contacts.html"><span>Contactos</span></a>
 										<!-- sub menu start-->
-										<ul class="main-menu__sub-list">
-											<li><a href="shop.html"><span>Catalog Page</span></a></li>
-											<li><a href="shop-product.html"><span>Shop Product</span></a></li>
-											<li><a href="shop-cart.html"><span>Shop Cart</span></a></li>
-											<li><a href="shop-checkout.html"><span>Shop Checkout</span></a></li>
-											<li><a href="shop-account.html"><span>Shop Account</span></a></li>
-										</ul>
-										<!-- sub menu end-->
-									</li>
-									<li class="main-menu__item"><a class="main-menu__link" href="contacts.html"><span>Contacts</span></a></li>
-									<li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link" href="javascript:void(0);"><span>Elements</span></a>
-										<!-- sub menu start-->
-										<ul class="main-menu__sub-list">
-											<li><a href="alerts.html"><span>Alerts</span></a></li>
-											<li><a href="team.html"><span>Team</span></a></li>
-											<li><a href="testimonials.html"><span>Testimonials</span></a></li>
-											<li><a href="accordion.html"><span>Accordion</span></a></li>
-											<li><a href="tabs.html"><span>Tabs</span></a></li>
-											<li><a href="pricing-plan.html"><span>Pricing Plan</span></a></li>
-											<li><a href="counters.html"><span>Counters</span></a></li>
-											<li><a href="icons.html"><span>Icons</span></a></li>
-										</ul>
+										<!-- ul.main-menu__sub-list
+										li(class=(page === "alerts" ? "item--active" : undefined))
+											a(href="alerts.html")
+												span Alerts
+										li(class=(page === "team" ? "item--active" : undefined))
+											a(href="team.html")
+												span Team
+										li(class=(page === "testimonials" ? "item--active" : undefined))
+											a(href="testimonials.html")
+												span Testimonials
+										li(class=(page === "accordion" ? "item--active" : undefined))
+											a(href="accordion.html")
+												span Accordion
+										li(class=(page === "tabs" ? "item--active" : undefined))
+											a(href="tabs.html")
+												span Tabs
+										li(class=(page === "pricing-plan" ? "item--active" : undefined))
+											a(href="pricing-plan.html")
+												span Pricing Plan
+										li(class=(page === "counters" ? "item--active" : undefined))
+											a(href="counters.html")
+												span Counters
+										li(class=(page === "icons" ? "item--active" : undefined))
+											a(href="icons.html")
+												span Icons
+
+										-->
 										<!-- sub menu end-->
 									</li>
 								</ul>
@@ -412,11 +584,10 @@
 							<!-- footer socials end-->
 						</div>
 						<div class="col-sm-6 col-lg-3">
-							<h4 class="footer__title">Contacts</h4>
+							<h4 class="footer__title">Contactos</h4>
 							<div class="footer-contacts">
-								<p class="footer-contacts__address">Elliott Ave, Parkville VIC 3052, Melbourne Canada</p>
-								<p class="footer-contacts__phone">Phone: <a href="tel:+31859644725">+31 85 964 47 25</a></p>
-								<p class="footer-contacts__mail">Email: <a href="mailto:support@helpo.org">support@helpo.org</a></p>
+								<p class="footer-contacts__phone">Phone: <a href="tel:+XXXXXXXXX">+XXX XXXX</a></p>
+								<p class="footer-contacts__mail">Email: <a href="mailto:redcannabicard@gmail.com">redcannabicard@gmail.com</a></p>
 							</div>
 						</div>
 						<div class="col-sm-6 col-lg-3">
@@ -425,19 +596,16 @@
 							<nav>
 								<ul class="footer-menu">
 									<li class="footer-menu__item"><a class="footer-menu__link" href="index.html">Home</a></li>
-									<li class="footer-menu__item"><a class="footer-menu__link" href="#">Blog</a></li>
+									<li class="footer-menu__item footer-menu__item--active"><a class="footer-menu__link" href="blog.html">Blog</a></li>
 									<li class="footer-menu__item"><a class="footer-menu__link" href="about.html">About</a></li>
-									<li class="footer-menu__item"><a class="footer-menu__link" href="#">Contacts</a></li>
-									<li class="footer-menu__item"><a class="footer-menu__link" href="#">Pages</a></li>
-									<li class="footer-menu__item"><a class="footer-menu__link" href="#">Elements</a></li>
-									<li class="footer-menu__item"><a class="footer-menu__link" href="causes.html">Causes</a></li>
+									<li class="footer-menu__item"><a class="footer-menu__link" href="contacts.html">Contacts</a></li>
 								</ul>
 							</nav>
 							<!-- footer nav end-->
 						</div>
 						<div class="col-sm-6 col-lg-3">
-							<h4 class="footer__title">Donate</h4>
-							<p>Help Us Change the Lives of Children in World</p><a class="button footer__button button--filled" href="#">Donate</a>
+							<h4 class="footer__title">Apoyanos</h4>
+							<p>Ayúdanos a cambiar la vida de miles de pacientes</p><a class="dbox-donation-button button footer__button button--filled" href="https://donorbox.org/contribuye-redcannabica-rd">Apoyanos</a>
 						</div>
 					</div>
 					<div class="row align-items-baseline">
