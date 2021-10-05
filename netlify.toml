@@ -1,0 +1,4 @@
+# global context
+[build]
+  publish = "assets"
+  command = "gulp build"
