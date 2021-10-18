@@ -1,0 +1,10 @@
+# Commands to start on workspace startup
+image:
+  file: .gitpod.Dockerfile
+tasks:
+  - init: yarn install
+    command: gulp dev
+# Ports to expose on workspace startup
+ports:
+  - port: 8000
+    onOpen: open-preview
