@@ -2,7 +2,7 @@
 image:
   file: .gitpod.Dockerfile
 tasks:
-  - init: yarn install
+  - init: yarn install && npm install -g gulp-cli
     command: gulp dev
 # Ports to expose on workspace startup
 ports:
