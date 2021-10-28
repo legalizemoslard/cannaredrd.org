@@ -15,22 +15,22 @@ footer.footer
 					li.footer-socials__item
 						a.footer-socials__link(href="https://www.instagram.com/redcannabicard/" target="_blank")
 							+fa('instagram')
+					li.footer-socials__item
+						a.footer-socials__link(href="https://fb.me/redcannabicard")
+							+fa('facebook')
 					// li.footer-socials__item
 						a.footer-socials__link(href="#")
 							+fa('twitter')
 					// li.footer-socials__item
 						a.footer-socials__link(href="#")
 							+fa('google-plus')
-					// li.footer-socials__item
-						a.footer-socials__link(href="#")
-							+fa('instagram')
 				// footer socials end
 
 			.col-sm-6.col-lg-3
 
 				h4.footer__title Contactos
 				.footer-contacts
-					p.footer-contacts__phone Phone: #[a(href="tel:+XXXXXXXXX") +XXX XXXX]
+					// p.footer-contacts__phone Phone: #[a(href="tel:+XXXXXXXXX") +XXX XXXX]
 					p.footer-contacts__mail Email: #[a(href="mailto:redcannabicard@gmail.com") redcannabicard@gmail.com]
 
 			.col-sm-6.col-lg-3
@@ -46,7 +46,7 @@ footer.footer
 							a.footer-menu__link(href="blog.html") Blog
 						li.footer-menu__item(class=(page === "about" ? "footer-menu__item--active" : undefined))
 							a.footer-menu__link(href="about.html") About
-						li.footer-menu__item(class=(page === "contacts" ? "footer-menu__item--active" : undefined))
+						// li.footer-menu__item(class=(page === "contacts" ? "footer-menu__item--active" : undefined))
 							a.footer-menu__link(href="contacts.html") Contacts
 				// footer nav end
 
@@ -54,13 +54,13 @@ footer.footer
 
 				h4.footer__title Apoyanos
 				p Ayúdanos a cambiar la vida de miles de pacientes
-				a.dbox-donation-button.button.footer__button.button--filled(href="https://donorbox.org/contribuye-redcannabica-rd") Apoyanos
+				a.button.footer__button.button--filled(href='https://www.patreon.com/redcannabicard', target="_blank") Apoyanos
 
 		.row.align-items-baseline
 
 			.col-md-6
 
-				p.footer-copyright © 2020 Red Cannabica RD. All rights reserved
+				p.footer-copyright © 2021 Red Cannabica RD.
 
 			.col-md-6
 
