@@ -1,6 +1,12 @@
 // footer start
 
 footer.footer
+	.modalContainer 
+		.container.modalContent
+			img.modalClose#modalClose(src="img/close.png", alt="img")
+			img.modalImg(src="img/evento_diciembre.png", alt="img")
+
+
 	.container
 		.row
 
@@ -21,9 +27,9 @@ footer.footer
 					// li.footer-socials__item
 						a.footer-socials__link(href="#")
 							+fa('twitter')
-					// li.footer-socials__item
-						a.footer-socials__link(href="#")
-							+fa('google-plus')
+					li.footer-socials__item
+						a.footer-socials__link(href="https://twitter.com/redcannabicard")
+							+fa('twitter')
 				// footer socials end
 
 			.col-sm-6.col-lg-3
@@ -42,9 +48,9 @@ footer.footer
 					ul.footer-menu
 						li.footer-menu__item(class=(type === "front" ? "footer-menu__item--active" : undefined))
 							a.footer-menu__link(href="index.html") Home
-						li.footer-menu__item(class=(page === "blog" ? "footer-menu__item--active" : undefined))
+						// li.footer-menu__item(class=(page === "blog" ? "footer-menu__item--active" : undefined))
 							a.footer-menu__link(href="blog.html") Blog
-						li.footer-menu__item(class=(page === "about" ? "footer-menu__item--active" : undefined))
+						// li.footer-menu__item(class=(page === "about" ? "footer-menu__item--active" : undefined))
 							a.footer-menu__link(href="about.html") About
 						// li.footer-menu__item(class=(page === "contacts" ? "footer-menu__item--active" : undefined))
 							a.footer-menu__link(href="contacts.html") Contacts

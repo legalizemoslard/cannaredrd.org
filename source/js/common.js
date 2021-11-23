@@ -272,6 +272,10 @@
 
 		}
 
+		$('#modalClose').on('click', function(event) {
+			$('.modalContainer').hide();
+		});
+
 		asideDropdown();
 
 		// video trigger
