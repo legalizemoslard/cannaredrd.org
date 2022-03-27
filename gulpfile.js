@@ -71,6 +71,11 @@ const paths = {
 		src: './source/fonts/**/*',
 		dest: './assets/fonts',
 		watch: './source/fonts'
+	},
+
+	netlify: {
+		src: './_redirect',
+		dest: './assets'
 	}
 
 }
@@ -200,6 +205,17 @@ gulp.task('fonts', function () {
 		}))
 })
 
+// netlify
+
+gulp.task('netlify', function () {
+	return gulp.src(paths.netlify.src)
+		.pipe(plumber())
+		.pipe(gulp.dest(paths.netlify.dest))
+		.pipe(browserSync.reload({
+			stream: true
+		}))
+})
+
 // server
 
 gulp.task('server', function () {
@@ -239,7 +255,8 @@ gulp.task('build', gulp.series(
 	'scripts',
 	'js',
 	'images',
-	'fonts'
+	'fonts',
+	'netlify'
 ))
 
 gulp.task('dev', gulp.series(
