@@ -222,13 +222,10 @@
 							<div class="blog-item blog-item--style-1">
 								<div class="blog-item__img"><img class="img--bg" src="${event.cover.url}" alt="img"><span class="blog-item__badge" style="background-color: #49C2DF;">Event</span></div>
 								<div class="blog-item__content">
+									<div class="blog-item__details"><span class="blog-item__date">${event.date}</span></div>
 									<h6 class="blog-item__title"><a href="${event.link}" target="_blank">${event.title}</a></h6>
 									<p>${event.description}</p><a href="${event.link}" target="_blank"> 
-										<h6>Ver Evento</h6></a>
-									<div class="blog-item__details"><span class="blog-item__date">02 Dic 21</span><span>
-										<svg class="icon">
-											<use xlink:href="#comment"></use>
-										</svg> ${event.date}</span></div>
+									<h6>Ver Evento</h6></a>
 								</div>
 							</div>
 						</div>
@@ -253,20 +250,17 @@
 				.then(data => {
 					if (!data) return
 
-					data.map(event => {
+					data.map(news => {
 						
 						newsContainer.append(`
 						<div class="col-xs-12 col-md-6 col-lg-4">
 							<div class="blog-item blog-item--style-1">
-								<div class="blog-item__img"><img class="img--bg" src="${event.cover.url}" alt="img"><span class="blog-item__badge" style="background-color: #49C2DF;">Event</span></div>
+								<div class="blog-item__img"><img class="img--bg" src="${news.cover.url}" alt="img"><span class="blog-item__badge" style="background-color: #49C2DF;">Event</span></div>
 								<div class="blog-item__content">
-									<h6 class="blog-item__title"><a href="${event.link}" target="_blank">${event.title}</a></h6>
-									<p>${event.description}</p><a href="${event.link}" target="_blank"> 
-										<h6>Ver Evento</h6></a>
-									<div class="blog-item__details"><span class="blog-item__date">02 Dic 21</span><span>
-										<svg class="icon">
-											<use xlink:href="#comment"></use>
-										</svg> ${event.date}</span></div>
+									<div class="blog-item__details"><span class="blog-item__date">${news.date}</span></div>
+									<h6 class="blog-item__title"><a href="${news.link}" target="_blank">${news.title}</a></h6>
+									<p>${news.description}</p><a href="${news.link}" target="_blank"> 
+									<h6>Ver Evento</h6></a>
 								</div>
 							</div>
 						</div>
