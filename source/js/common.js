@@ -201,6 +201,82 @@
 	});
 
 	jQuery(document).ready(function () {
+
+		function getEvents() {
+
+			var eventsContainer = $('#eventsContainer');
+
+			console.log(eventsContainer);
+
+			if (!eventsContainer.length) return;
+
+			fetch('https://cannared.herokuapp.com/events?_limit=3')
+				.then(response => response.json())
+				.then(data => {
+					if (!data) return
+
+					data.map(event => {
+						
+						eventsContainer.append(`
+						<div class="col-xs-12 col-md-6 col-lg-4">
+							<div class="blog-item blog-item--style-1">
+								<div class="blog-item__img"><img class="img--bg" src="${event.cover.url}" alt="img"><span class="blog-item__badge" style="background-color: #49C2DF;">Event</span></div>
+								<div class="blog-item__content">
+									<h6 class="blog-item__title"><a href="${event.link}" target="_blank">${event.title}</a></h6>
+									<p>${event.description}</p><a href="${event.link}" target="_blank"> 
+										<h6>Ver Evento</h6></a>
+									<div class="blog-item__details"><span class="blog-item__date">02 Dic 21</span><span>
+										<svg class="icon">
+											<use xlink:href="#comment"></use>
+										</svg> ${event.date}</span></div>
+								</div>
+							</div>
+						</div>
+						`)
+					})
+				});
+
+		}
+
+		getEvents();
+
+		function getNews() {
+
+			var newsContainer = $('#newsContainer');
+
+			console.log(newsContainer);
+
+			if (!newsContainer.length) return;
+
+			fetch('https://cannared.herokuapp.com/events?_limit=3')
+				.then(response => response.json())
+				.then(data => {
+					if (!data) return
+
+					data.map(event => {
+						
+						newsContainer.append(`
+						<div class="col-xs-12 col-md-6 col-lg-4">
+							<div class="blog-item blog-item--style-1">
+								<div class="blog-item__img"><img class="img--bg" src="${event.cover.url}" alt="img"><span class="blog-item__badge" style="background-color: #49C2DF;">Event</span></div>
+								<div class="blog-item__content">
+									<h6 class="blog-item__title"><a href="${event.link}" target="_blank">${event.title}</a></h6>
+									<p>${event.description}</p><a href="${event.link}" target="_blank"> 
+										<h6>Ver Evento</h6></a>
+									<div class="blog-item__details"><span class="blog-item__date">02 Dic 21</span><span>
+										<svg class="icon">
+											<use xlink:href="#comment"></use>
+										</svg> ${event.date}</span></div>
+								</div>
+							</div>
+						</div>
+						`)
+					})
+				});
+
+		}
+
+		// getNews();
 		
 		// object fit
 
