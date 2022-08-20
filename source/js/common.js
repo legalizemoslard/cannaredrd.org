@@ -210,28 +210,262 @@
 
 			if (!eventsContainer.length) return;
 
-			fetch('https://cannared.herokuapp.com/events?_limit=3')
-				.then(response => response.json())
-				.then(data => {
-					if (!data) return
+			let events = [
+				{
+					"_id": "624070f22fece108e7f471b2",
+					"title": "Anuncian la 1ra Jornada Latinoamericana de concientización de cannabis",
+					"description": "CannaReD República Dominicana y CAMEDA Cannabis Medicinal Argentina, organizan la 1ra Jornada Latinoamericana virtual de Concientización en cannabis de uso medicinal que tendrá lugar el día 2 de Diciembre 17hs (RD), Mexico 16hs ,Chile 18hs , Argentina 18hs. A trasmitir por Zoom, Youtube, Instagram y Facebook.",
+					"link": "https://hoy.com.do/anuncian-la-1ra-jornada-latinoamericana-de-concientizacion-de-cannabis/",
+					"date": "2021-11-23",
+					"published_at": "2022-03-27T14:13:11.338Z",
+					"createdAt": "2022-03-27T14:13:06.984Z",
+					"updatedAt": "2022-03-29T19:34:04.338Z",
+					"__v": 0,
+					"cover": {
+						"_id": "62435f267ad51a0e670035e6",
+						"name": "blog_2.png",
+						"alternativeText": "",
+						"caption": "",
+						"hash": "blog_2_8bc6cbbd2d",
+						"ext": ".png",
+						"mime": "image/png",
+						"size": 922.56,
+						"width": 2450,
+						"height": 2020,
+						"url": "https://cannared.s3.amazonaws.com/blog_2_8bc6cbbd2d.png",
+						"formats": {
+							"thumbnail": {
+								"name": "thumbnail_blog_2.png",
+								"hash": "thumbnail_blog_2_8bc6cbbd2d",
+								"ext": ".png",
+								"mime": "image/png",
+								"width": 189,
+								"height": 156,
+								"size": 21.4,
+								"path": null,
+								"url": "https://cannared.s3.amazonaws.com/thumbnail_blog_2_8bc6cbbd2d.png"
+							},
+							"large": {
+								"name": "large_blog_2.png",
+								"hash": "large_blog_2_8bc6cbbd2d",
+								"ext": ".png",
+								"mime": "image/png",
+								"width": 1000,
+								"height": 824,
+								"size": 307.33,
+								"path": null,
+								"url": "https://cannared.s3.amazonaws.com/large_blog_2_8bc6cbbd2d.png"
+							},
+							"medium": {
+								"name": "medium_blog_2.png",
+								"hash": "medium_blog_2_8bc6cbbd2d",
+								"ext": ".png",
+								"mime": "image/png",
+								"width": 750,
+								"height": 618,
+								"size": 193.33,
+								"path": null,
+								"url": "https://cannared.s3.amazonaws.com/medium_blog_2_8bc6cbbd2d.png"
+							},
+							"small": {
+								"name": "small_blog_2.png",
+								"hash": "small_blog_2_8bc6cbbd2d",
+								"ext": ".png",
+								"mime": "image/png",
+								"width": 500,
+								"height": 412,
+								"size": 101.22,
+								"path": null,
+								"url": "https://cannared.s3.amazonaws.com/small_blog_2_8bc6cbbd2d.png"
+							}
+						},
+						"provider": "aws-s3",
+						"related": [
+							"624070f22fece108e7f471b2"
+						],
+						"createdAt": "2022-03-29T19:33:58.825Z",
+						"updatedAt": "2022-03-29T19:34:04.247Z",
+						"__v": 0,
+						"id": "62435f267ad51a0e670035e6"
+					},
+					"id": "624070f22fece108e7f471b2"
+				},
+				{
+					"_id": "624071182fece108e7f471b3",
+					"title": "Casa Abierta invita a Jornada sobre Cannabis Medicinal",
+					"description": "En diciembre del pasado año 2020, la ONU reconoció las propiedades medicinales del cannabis, mejor conocido como marihuana.",
+					"link": "https://elsoldelasamericas.com/2021/11/26/casa-abierta-invita-a-jornada-sobre-cannabis-medicinal/",
+					"date": "2021-11-26",
+					"published_at": "2022-03-27T14:13:46.671Z",
+					"createdAt": "2022-03-27T14:13:44.356Z",
+					"updatedAt": "2022-03-29T19:34:41.620Z",
+					"__v": 0,
+					"cover": {
+						"_id": "62435f4d7ad51a0e670035e8",
+						"name": "el_sol_periodico.png",
+						"alternativeText": "",
+						"caption": "",
+						"hash": "el_sol_periodico_9e45524c3a",
+						"ext": ".png",
+						"mime": "image/png",
+						"size": 831.83,
+						"width": 5120,
+						"height": 2662,
+						"url": "https://cannared.s3.amazonaws.com/el_sol_periodico_9e45524c3a.png",
+						"formats": {
+							"thumbnail": {
+								"name": "thumbnail_el_sol_periodico.png",
+								"hash": "thumbnail_el_sol_periodico_9e45524c3a",
+								"ext": ".png",
+								"mime": "image/png",
+								"width": 245,
+								"height": 127,
+								"size": 23.63,
+								"path": null,
+								"url": "https://cannared.s3.amazonaws.com/thumbnail_el_sol_periodico_9e45524c3a.png"
+							},
+							"large": {
+								"name": "large_el_sol_periodico.png",
+								"hash": "large_el_sol_periodico_9e45524c3a",
+								"ext": ".png",
+								"mime": "image/png",
+								"width": 1000,
+								"height": 520,
+								"size": 258.46,
+								"path": null,
+								"url": "https://cannared.s3.amazonaws.com/large_el_sol_periodico_9e45524c3a.png"
+							},
+							"medium": {
+								"name": "medium_el_sol_periodico.png",
+								"hash": "medium_el_sol_periodico_9e45524c3a",
+								"ext": ".png",
+								"mime": "image/png",
+								"width": 750,
+								"height": 390,
+								"size": 158.19,
+								"path": null,
+								"url": "https://cannared.s3.amazonaws.com/medium_el_sol_periodico_9e45524c3a.png"
+							},
+							"small": {
+								"name": "small_el_sol_periodico.png",
+								"hash": "small_el_sol_periodico_9e45524c3a",
+								"ext": ".png",
+								"mime": "image/png",
+								"width": 500,
+								"height": 260,
+								"size": 79.78,
+								"path": null,
+								"url": "https://cannared.s3.amazonaws.com/small_el_sol_periodico_9e45524c3a.png"
+							}
+						},
+						"provider": "aws-s3",
+						"related": [
+							"624071182fece108e7f471b3"
+						],
+						"createdAt": "2022-03-29T19:34:37.133Z",
+						"updatedAt": "2022-03-29T19:34:41.538Z",
+						"__v": 0,
+						"id": "62435f4d7ad51a0e670035e8"
+					},
+					"id": "624071182fece108e7f471b3"
+				},
+				{
+					"_id": "624071372fece108e7f471b4",
+					"title": "Jornada Latinoamericana de Concientización en cannabis de uso medicinal",
+					"description": "En el 1° aniversario del reconocimiento de las propiedades medicinales del cannabis por parte de la Organización de las Naciones Unidas (ONU), convocamos a un encuentro latinoamericano que busca generar educación, conocimiento y herramientas con alto contenido científico.",
+					"link": "https://youtu.be/qAPnMhvc6tA",
+					"date": "2021-12-02",
+					"published_at": "2022-03-27T14:14:17.864Z",
+					"createdAt": "2022-03-27T14:14:15.281Z",
+					"updatedAt": "2022-03-29T19:35:21.570Z",
+					"__v": 0,
+					"cover": {
+						"_id": "62435f757ad51a0e670035ea",
+						"name": "hoy-evento.png",
+						"alternativeText": "",
+						"caption": "",
+						"hash": "hoy_evento_3f16dc9da1",
+						"ext": ".png",
+						"mime": "image/png",
+						"size": 1159.93,
+						"width": 2880,
+						"height": 1944,
+						"url": "https://cannared.s3.amazonaws.com/hoy_evento_3f16dc9da1.png",
+						"formats": {
+							"thumbnail": {
+								"name": "thumbnail_hoy-evento.png",
+								"hash": "thumbnail_hoy_evento_3f16dc9da1",
+								"ext": ".png",
+								"mime": "image/png",
+								"width": 231,
+								"height": 156,
+								"size": 29.15,
+								"path": null,
+								"url": "https://cannared.s3.amazonaws.com/thumbnail_hoy_evento_3f16dc9da1.png"
+							},
+							"large": {
+								"name": "large_hoy-evento.png",
+								"hash": "large_hoy_evento_3f16dc9da1",
+								"ext": ".png",
+								"mime": "image/png",
+								"width": 1000,
+								"height": 675,
+								"size": 309.06,
+								"path": null,
+								"url": "https://cannared.s3.amazonaws.com/large_hoy_evento_3f16dc9da1.png"
+							},
+							"medium": {
+								"name": "medium_hoy-evento.png",
+								"hash": "medium_hoy_evento_3f16dc9da1",
+								"ext": ".png",
+								"mime": "image/png",
+								"width": 750,
+								"height": 506,
+								"size": 189.96,
+								"path": null,
+								"url": "https://cannared.s3.amazonaws.com/medium_hoy_evento_3f16dc9da1.png"
+							},
+							"small": {
+								"name": "small_hoy-evento.png",
+								"hash": "small_hoy_evento_3f16dc9da1",
+								"ext": ".png",
+								"mime": "image/png",
+								"width": 500,
+								"height": 338,
+								"size": 100.38,
+								"path": null,
+								"url": "https://cannared.s3.amazonaws.com/small_hoy_evento_3f16dc9da1.png"
+							}
+						},
+						"provider": "aws-s3",
+						"related": [
+							"624071372fece108e7f471b4"
+						],
+						"createdAt": "2022-03-29T19:35:17.622Z",
+						"updatedAt": "2022-03-29T19:35:21.486Z",
+						"__v": 0,
+						"id": "62435f757ad51a0e670035ea"
+					},
+					"id": "624071372fece108e7f471b4"
+				}
+			]
 
-					data.map(event => {
-						
-						eventsContainer.append(`
-						<div class="col-xs-12 col-md-6 col-lg-4">
-							<div class="blog-item blog-item--style-1">
-								<div class="blog-item__img"><img class="img--bg" src="${event.cover.url}" alt="img"><span class="blog-item__badge" style="background-color: #49C2DF;">Event</span></div>
-								<div class="blog-item__content">
-									<div class="blog-item__details"><span class="blog-item__date">${event.date}</span></div>
-									<h6 class="blog-item__title"><a href="${event.link}" target="_blank">${event.title}</a></h6>
-									<p>${event.description}</p><a href="${event.link}" target="_blank"> 
-									<h6>Ver Evento</h6></a>
-								</div>
-							</div>
+			events.map(event => {
+				
+				eventsContainer.append(`
+				<div class="col-xs-12 col-md-6 col-lg-4">
+					<div class="blog-item blog-item--style-1">
+						<div class="blog-item__img"><img class="img--bg" src="${event.cover.url}" alt="img"><span class="blog-item__badge" style="background-color: #49C2DF;">Event</span></div>
+						<div class="blog-item__content">
+							<div class="blog-item__details"><span class="blog-item__date">${event.date}</span></div>
+							<h6 class="blog-item__title"><a href="${event.link}" target="_blank">${event.title}</a></h6>
+							<p>${event.description}</p><a href="${event.link}" target="_blank"> 
+							<h6>Ver Evento</h6></a>
 						</div>
-						`)
-					})
-				});
+					</div>
+				</div>
+				`)
+			})
 
 		}
 
@@ -243,34 +477,35 @@
 
 			console.log(newsContainer);
 
-			if (!newsContainer.length) return;
-
-			fetch('https://cannared.herokuapp.com/events?_limit=3')
+			fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@cannared`)
 				.then(response => response.json())
 				.then(data => {
 					if (!data) return
 
-					data.map(news => {
+					console.log(data.items);
+
+					data.items.map(blog => {
 						
 						newsContainer.append(`
 						<div class="col-xs-12 col-md-6 col-lg-4">
 							<div class="blog-item blog-item--style-1">
-								<div class="blog-item__img"><img class="img--bg" src="${news.cover.url}" alt="img"><span class="blog-item__badge" style="background-color: #49C2DF;">Event</span></div>
+								<div class="blog-item__img"><img class="img--bg" src="${blog.thumbnail}" alt="img"><span class="blog-item__badge" style="background-color: #49C2DF;">Blog</span></div>
 								<div class="blog-item__content">
-									<div class="blog-item__details"><span class="blog-item__date">${news.date}</span></div>
-									<h6 class="blog-item__title"><a href="${news.link}" target="_blank">${news.title}</a></h6>
-									<p>${news.description}</p><a href="${news.link}" target="_blank"> 
-									<h6>Ver Evento</h6></a>
+									<div class="blog-item__details"><span class="blog-item__date">${blog.pubDate}</span></div>
+									<h6 class="blog-item__title"><a href="${blog.link}" target="_blank">${blog.title}</a></h6>
+									<div class="blog-item_description">
+										<p>${blog.description}</p><a href="${blog.link}" target="_blank"> 
+									</div>
+									<h6>Ver Articulo</h6></a>
 								</div>
 							</div>
 						</div>
 						`)
 					})
 				});
-
 		}
 
-		// getNews();
+		getNews();
 		
 		// object fit
 
