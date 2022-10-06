@@ -212,162 +212,37 @@
 
 			let events = [
 				{
-					"_id": "624070f22fece108e7f471b2",
-					"title": "Anuncian la 1ra Jornada Latinoamericana de concientización de cannabis",
-					"description": "CannaReD República Dominicana y CAMEDA Cannabis Medicinal Argentina, organizan la 1ra Jornada Latinoamericana virtual de Concientización en cannabis de uso medicinal que tendrá lugar el día 2 de Diciembre 17hs (RD), Mexico 16hs ,Chile 18hs , Argentina 18hs. A trasmitir por Zoom, Youtube, Instagram y Facebook.",
-					"link": "https://hoy.com.do/anuncian-la-1ra-jornada-latinoamericana-de-concientizacion-de-cannabis/",
-					"date": "2021-11-23",
-					"published_at": "2022-03-27T14:13:11.338Z",
-					"createdAt": "2022-03-27T14:13:06.984Z",
-					"updatedAt": "2022-03-29T19:34:04.338Z",
+					"_id": "624071372fece108e7f471b4",
+					"title": "Promueven anteproyecto de ley que despenalice en el país marihuana para uso medicinal",
+					"description": "Fundación dice estudios demuestran que la marihuana mejora síntomas de muchas enfermedades y que sus daños a la salud son menores a los causados por el alcohol o el tabaco.",
+					"link": "https://www.diariolibre.com/actualidad/nacional/2022/10/02/promueven-anteproyecto-de-ley-que-despenalice-marihuana/2097211",
+					"date": "2022-12-02",
+					"published_at": "2022-12-02T14:14:17.864Z",
+					"createdAt": "2022-12-02T14:14:15.281Z",
+					"updatedAt": "2022-12-02T19:35:21.570Z",
 					"__v": 0,
 					"cover": {
-						"_id": "62435f267ad51a0e670035e6",
-						"name": "blog_2.png",
+						"_id": "62435f757ad51a0e670035ea",
+						"name": "cannared.png",
 						"alternativeText": "",
 						"caption": "",
-						"hash": "blog_2_8bc6cbbd2d",
+						"hash": "hoy_evento_3f16dc9da1",
 						"ext": ".png",
 						"mime": "image/png",
-						"size": 922.56,
-						"width": 2450,
-						"height": 2020,
-						"url": "https://cannared.s3.amazonaws.com/blog_2_8bc6cbbd2d.png",
-						"formats": {
-							"thumbnail": {
-								"name": "thumbnail_blog_2.png",
-								"hash": "thumbnail_blog_2_8bc6cbbd2d",
-								"ext": ".png",
-								"mime": "image/png",
-								"width": 189,
-								"height": 156,
-								"size": 21.4,
-								"path": null,
-								"url": "https://cannared.s3.amazonaws.com/thumbnail_blog_2_8bc6cbbd2d.png"
-							},
-							"large": {
-								"name": "large_blog_2.png",
-								"hash": "large_blog_2_8bc6cbbd2d",
-								"ext": ".png",
-								"mime": "image/png",
-								"width": 1000,
-								"height": 824,
-								"size": 307.33,
-								"path": null,
-								"url": "https://cannared.s3.amazonaws.com/large_blog_2_8bc6cbbd2d.png"
-							},
-							"medium": {
-								"name": "medium_blog_2.png",
-								"hash": "medium_blog_2_8bc6cbbd2d",
-								"ext": ".png",
-								"mime": "image/png",
-								"width": 750,
-								"height": 618,
-								"size": 193.33,
-								"path": null,
-								"url": "https://cannared.s3.amazonaws.com/medium_blog_2_8bc6cbbd2d.png"
-							},
-							"small": {
-								"name": "small_blog_2.png",
-								"hash": "small_blog_2_8bc6cbbd2d",
-								"ext": ".png",
-								"mime": "image/png",
-								"width": 500,
-								"height": 412,
-								"size": 101.22,
-								"path": null,
-								"url": "https://cannared.s3.amazonaws.com/small_blog_2_8bc6cbbd2d.png"
-							}
-						},
+						"size": 1159.93,
+						"width": 2880,
+						"height": 1944,
+						"url": "https://bafybeib6jgo3ujq7daakwubplmumhkanhcnk55kp54z6oy6qx4yoobng4q.ipfs.w3s.link/www.diariolibre.com_actualidad_nacional_2022_10_02_promueven-anteproyecto-de-ley-que-despenalice-marihuana_2097211-min.png",
 						"provider": "aws-s3",
 						"related": [
-							"624070f22fece108e7f471b2"
+							"624071372fece108e7f471b4"
 						],
-						"createdAt": "2022-03-29T19:33:58.825Z",
-						"updatedAt": "2022-03-29T19:34:04.247Z",
+						"createdAt": "2022-12-02T19:35:17.622Z",
+						"updatedAt": "2022-12-02T19:35:21.486Z",
 						"__v": 0,
-						"id": "62435f267ad51a0e670035e6"
+						"id": "62435f757ad51a0e670035ea"
 					},
-					"id": "624070f22fece108e7f471b2"
-				},
-				{
-					"_id": "624071182fece108e7f471b3",
-					"title": "Casa Abierta invita a Jornada sobre Cannabis Medicinal",
-					"description": "En diciembre del pasado año 2020, la ONU reconoció las propiedades medicinales del cannabis, mejor conocido como marihuana.",
-					"link": "https://elsoldelasamericas.com/2021/11/26/casa-abierta-invita-a-jornada-sobre-cannabis-medicinal/",
-					"date": "2021-11-26",
-					"published_at": "2022-03-27T14:13:46.671Z",
-					"createdAt": "2022-03-27T14:13:44.356Z",
-					"updatedAt": "2022-03-29T19:34:41.620Z",
-					"__v": 0,
-					"cover": {
-						"_id": "62435f4d7ad51a0e670035e8",
-						"name": "el_sol_periodico.png",
-						"alternativeText": "",
-						"caption": "",
-						"hash": "el_sol_periodico_9e45524c3a",
-						"ext": ".png",
-						"mime": "image/png",
-						"size": 831.83,
-						"width": 5120,
-						"height": 2662,
-						"url": "https://cannared.s3.amazonaws.com/el_sol_periodico_9e45524c3a.png",
-						"formats": {
-							"thumbnail": {
-								"name": "thumbnail_el_sol_periodico.png",
-								"hash": "thumbnail_el_sol_periodico_9e45524c3a",
-								"ext": ".png",
-								"mime": "image/png",
-								"width": 245,
-								"height": 127,
-								"size": 23.63,
-								"path": null,
-								"url": "https://cannared.s3.amazonaws.com/thumbnail_el_sol_periodico_9e45524c3a.png"
-							},
-							"large": {
-								"name": "large_el_sol_periodico.png",
-								"hash": "large_el_sol_periodico_9e45524c3a",
-								"ext": ".png",
-								"mime": "image/png",
-								"width": 1000,
-								"height": 520,
-								"size": 258.46,
-								"path": null,
-								"url": "https://cannared.s3.amazonaws.com/large_el_sol_periodico_9e45524c3a.png"
-							},
-							"medium": {
-								"name": "medium_el_sol_periodico.png",
-								"hash": "medium_el_sol_periodico_9e45524c3a",
-								"ext": ".png",
-								"mime": "image/png",
-								"width": 750,
-								"height": 390,
-								"size": 158.19,
-								"path": null,
-								"url": "https://cannared.s3.amazonaws.com/medium_el_sol_periodico_9e45524c3a.png"
-							},
-							"small": {
-								"name": "small_el_sol_periodico.png",
-								"hash": "small_el_sol_periodico_9e45524c3a",
-								"ext": ".png",
-								"mime": "image/png",
-								"width": 500,
-								"height": 260,
-								"size": 79.78,
-								"path": null,
-								"url": "https://cannared.s3.amazonaws.com/small_el_sol_periodico_9e45524c3a.png"
-							}
-						},
-						"provider": "aws-s3",
-						"related": [
-							"624071182fece108e7f471b3"
-						],
-						"createdAt": "2022-03-29T19:34:37.133Z",
-						"updatedAt": "2022-03-29T19:34:41.538Z",
-						"__v": 0,
-						"id": "62435f4d7ad51a0e670035e8"
-					},
-					"id": "624071182fece108e7f471b3"
+					"id": "624071372fece108e7f471b4"
 				},
 				{
 					"_id": "624071372fece108e7f471b4",
@@ -447,6 +322,85 @@
 						"id": "62435f757ad51a0e670035ea"
 					},
 					"id": "624071372fece108e7f471b4"
+				},
+				{
+					"_id": "624071182fece108e7f471b3",
+					"title": "Casa Abierta invita a Jornada sobre Cannabis Medicinal",
+					"description": "En diciembre del pasado año 2020, la ONU reconoció las propiedades medicinales del cannabis, mejor conocido como marihuana.",
+					"link": "https://elsoldelasamericas.com/2021/11/26/casa-abierta-invita-a-jornada-sobre-cannabis-medicinal/",
+					"date": "2021-11-26",
+					"published_at": "2022-03-27T14:13:46.671Z",
+					"createdAt": "2022-03-27T14:13:44.356Z",
+					"updatedAt": "2022-03-29T19:34:41.620Z",
+					"__v": 0,
+					"cover": {
+						"_id": "62435f4d7ad51a0e670035e8",
+						"name": "el_sol_periodico.png",
+						"alternativeText": "",
+						"caption": "",
+						"hash": "el_sol_periodico_9e45524c3a",
+						"ext": ".png",
+						"mime": "image/png",
+						"size": 831.83,
+						"width": 5120,
+						"height": 2662,
+						"url": "https://cannared.s3.amazonaws.com/el_sol_periodico_9e45524c3a.png",
+						"formats": {
+							"thumbnail": {
+								"name": "thumbnail_el_sol_periodico.png",
+								"hash": "thumbnail_el_sol_periodico_9e45524c3a",
+								"ext": ".png",
+								"mime": "image/png",
+								"width": 245,
+								"height": 127,
+								"size": 23.63,
+								"path": null,
+								"url": "https://cannared.s3.amazonaws.com/thumbnail_el_sol_periodico_9e45524c3a.png"
+							},
+							"large": {
+								"name": "large_el_sol_periodico.png",
+								"hash": "large_el_sol_periodico_9e45524c3a",
+								"ext": ".png",
+								"mime": "image/png",
+								"width": 1000,
+								"height": 520,
+								"size": 258.46,
+								"path": null,
+								"url": "https://cannared.s3.amazonaws.com/large_el_sol_periodico_9e45524c3a.png"
+							},
+							"medium": {
+								"name": "medium_el_sol_periodico.png",
+								"hash": "medium_el_sol_periodico_9e45524c3a",
+								"ext": ".png",
+								"mime": "image/png",
+								"width": 750,
+								"height": 390,
+								"size": 158.19,
+								"path": null,
+								"url": "https://cannared.s3.amazonaws.com/medium_el_sol_periodico_9e45524c3a.png"
+							},
+							"small": {
+								"name": "small_el_sol_periodico.png",
+								"hash": "small_el_sol_periodico_9e45524c3a",
+								"ext": ".png",
+								"mime": "image/png",
+								"width": 500,
+								"height": 260,
+								"size": 79.78,
+								"path": null,
+								"url": "https://cannared.s3.amazonaws.com/small_el_sol_periodico_9e45524c3a.png"
+							}
+						},
+						"provider": "aws-s3",
+						"related": [
+							"624071182fece108e7f471b3"
+						],
+						"createdAt": "2022-03-29T19:34:37.133Z",
+						"updatedAt": "2022-03-29T19:34:41.538Z",
+						"__v": 0,
+						"id": "62435f4d7ad51a0e670035e8"
+					},
+					"id": "624071182fece108e7f471b3"
 				}
 			]
 
@@ -455,12 +409,12 @@
 				eventsContainer.append(`
 				<div class="col-xs-12 col-md-6 col-lg-4">
 					<div class="blog-item blog-item--style-1">
-						<div class="blog-item__img"><img class="img--bg" src="${event.cover.url}" alt="img"><span class="blog-item__badge" style="background-color: #49C2DF;">Event</span></div>
+						<div class="blog-item__img"><img class="img--bg" src="${event.cover.url}" alt="img"><span class="blog-item__badge" style="background-color: #49C2DF;">Noticias</span></div>
 						<div class="blog-item__content">
 							<div class="blog-item__details"><span class="blog-item__date">${event.date}</span></div>
 							<h6 class="blog-item__title"><a href="${event.link}" target="_blank">${event.title}</a></h6>
 							<p>${event.description}</p><a href="${event.link}" target="_blank"> 
-							<h6>Ver Evento</h6></a>
+							<h6>Ver Noticia</h6></a>
 						</div>
 					</div>
 				</div>
