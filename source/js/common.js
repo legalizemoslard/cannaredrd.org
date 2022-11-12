@@ -438,7 +438,9 @@
 
 					console.log(data.items);
 
-					data.items.map(blog => {
+					const articles = data.items.slice(0, 3);
+
+					articles.map(blog => {
 						
 						newsContainer.append(`
 						<div class="col-xs-12 col-md-6 col-lg-4">
